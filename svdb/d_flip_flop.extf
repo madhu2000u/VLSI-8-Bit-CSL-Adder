@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1700132871 1700132872
+lvs_ExtOutFile RUNDIR /home/home5/msudhanan/ese555workingdir
+lvs_ExtOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibreLVS.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/home5/msudhanan/ese555workingdir/d_flip_flop.sp
+lvs_ExtOutFile EXTRACTION_REPORT d_flip_flop.lvs.report.ext

@@ -1,0 +1,32 @@
+// Verilog HDL and netlist files of
+// "8_Bit_CSL_Adder sim_8_Bit_CSL_Adder schematic"
+
+// Netlisted models
+
+// netlist file - 8_Bit_CSL_Adder, 1_bit_mirror_full_adder, schematic.
+ihnl/cds0/netlist.sv
+// netlist file - D_flip_flop, inverter, schematic.
+ihnl/cds1/netlist.sv
+// netlist file - 8_Bit_CSL_Adder, 2-to-1-mux, schematic.
+ihnl/cds2/netlist.sv
+// netlist file - D_flip_flop, transmission_gate, schematic.
+ihnl/cds3/netlist.sv
+// netlist file - D_flip_flop, nand, schematic.
+ihnl/cds4/netlist.sv
+// netlist file - D_flip_flop, tristate_inverter, schematic.
+ihnl/cds5/netlist.sv
+// netlist file - D_flip_flop, tristate_nand, schematic.
+ihnl/cds6/netlist.sv
+// netlist file - D_flip_flop, D_flip_flop, schematic.
+ihnl/cds7/netlist.sv
+// netlist file - 8_Bit_CSL_Adder, 8_Bit_CSL_Adder, schematic.
+ihnl/cds8/netlist.sv
+// netlist file - 8_Bit_CSL_Adder, sim_8_Bit_CSL_Adder, schematic.
+ihnl/cds9/netlist.sv
+
+
+// End HDL models
+
+// globals file 
+hdlFilesDir/cds_globals.v
+

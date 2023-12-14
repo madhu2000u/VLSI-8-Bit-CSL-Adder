@@ -1,0 +1,192 @@
+// Library - 8_Bit_CSL_Adder, Cell - 8_Bit_CSL_Adder, View - schematic
+// LAST TIME SAVED: Dec  9 21:53:06 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_2 ( 
+output   CLK_MAIN, 
+output   Cout, 
+output   RESET, 
+output   S0, 
+output   S1, 
+output   S2, 
+output   S3, 
+output   S4, 
+output   S5, 
+output   S6, 
+output   S7, 
+inout   GND, 
+inout   VDD, 
+input   A0, 
+input   A1, 
+input   A2, 
+input   A3, 
+input   A4, 
+input   A5, 
+input   A6, 
+input   A7, 
+input   B0, 
+input   B1, 
+input   B2, 
+input   B3, 
+input   B4, 
+input   B5, 
+input   B6, 
+input   B7, 
+input   Cin );
+
+wire net2 ;
+
+wire net4 ;
+
+wire net3 ;
+
+wire net6 ;
+
+wire net5 ;
+
+wire net8 ;
+
+wire net9 ;
+
+wire net11 ;
+
+wire net12 ;
+
+wire net13 ;
+
+wire net14 ;
+
+wire net15 ;
+
+wire net16 ;
+
+wire net17 ;
+
+wire net18 ;
+
+wire net19 ;
+
+wire net20 ;
+
+wire net21 ;
+
+wire net22 ;
+
+wire net23 ;
+
+wire net24 ;
+
+wire net25 ;
+
+wire net26 ;
+
+wire net27 ;
+
+wire net28 ;
+
+wire net29 ;
+
+wire net30 ;
+
+wire net31 ;
+
+wire net32 ;
+
+wire net33 ;
+
+wire net34 ;
+
+wire net35 ;
+
+wire net36 ;
+
+wire net37 ;
+
+wire net38 ;
+
+wire net39 ;
+
+wire net40 ;
+
+wire net41 ;
+
+wire net42 ;
+
+wire net43 ;
+
+wire net44 ;
+
+wire net45 ;
+
+wire net1 ;
+
+wire net47 ;
+
+wire net48 ;
+
+wire net49 ;
+
+wire net50 ;
+
+wire net51 ;
+
+wire net52 ;
+
+wire net53 ;
+
+wire net54 ;
+
+wire net67 ;
+
+wire net55 ;
+
+wire net70 ;
+
+wire net65 ;
+
+wire net64 ;
+
+wire net59 ;
+
+wire net71 ;
+
+wire net72 ;
+
+wire net87 ;
+
+wire net63 ;
+
+wire net56 ;
+
+wire net46 ;
+
+wire net57 ;
+
+wire net58 ;
+
+wire net62 ;
+
+wire net69 ;
+
+wire net80 ;
+
+wire net66 ;
+
+wire net10 ;
+
+wire net60 ;
+
+wire net7 ;
+
+wire net61 ;
+
+wire net68 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "8_Bit_CSL_Adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

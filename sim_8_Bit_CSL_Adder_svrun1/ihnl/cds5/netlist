@@ -1,0 +1,31 @@
+// Library - D_flip_flop, Cell - tristate_inverter, View - schematic
+// LAST TIME SAVED: Nov 18 04:32:08 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module tristate_inverter ( 
+output   VOUT, 
+inout   GND, 
+inout   VDD, 
+input   CLK, 
+input   VIN, 
+input  cdsNet0 );
+
+wire net1 ;
+
+wire net2 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "tristate_inverter";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+PMOS_VTL  t_i_pmos_state_ctrl ( .D(net1), .B(VDD), .G(cdsNet0),
+     .S(VDD));
+PMOS_VTL  t_i_pmos ( .D(VOUT), .B(VDD), .G(VIN), .S(net1));
+NMOS_VTL  t_i_nmos_state_ctrl ( .D(net2), .B(GND), .G(CLK), .S(GND));
+NMOS_VTL  t_i_nmos ( .D(VOUT), .B(GND), .G(VIN), .S(net2));
+
+endmodule

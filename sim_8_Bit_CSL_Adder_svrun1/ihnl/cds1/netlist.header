@@ -1,0 +1,18 @@
+// Library - D_flip_flop, Cell - inverter, View - schematic
+// LAST TIME SAVED: Sep 26 21:36:14 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module inverter ( 
+output   VOUT, 
+inout   GND, 
+inout   VDD, 
+input   VIN );
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "inverter";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

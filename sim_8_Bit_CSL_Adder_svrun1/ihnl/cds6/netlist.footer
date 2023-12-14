@@ -1,0 +1,13 @@
+NMOS_VTL  t_nand_nmos_state_ctrl ( .D(net2), .B(GND), .G(cdsNet0),
+     .S(GND));
+NMOS_VTL  t_nand_nmos_2 ( .D(net1), .B(GND), .G(t_NAND_B), .S(net2));
+NMOS_VTL  t_nand_nmos_1 ( .D(t_NAND_VOUT), .B(GND), .G(t_NAND_A),
+     .S(net1));
+PMOS_VTL  t_nand_pmos_state_ctrl ( .D(net3), .B(VDD), .G(CLK),
+     .S(VDD));
+PMOS_VTL  t_nand_pmos_2 ( .D(t_NAND_VOUT), .B(VDD), .G(t_NAND_A),
+     .S(net3));
+PMOS_VTL  t_nand_pmos_1 ( .D(t_NAND_VOUT), .B(VDD), .G(t_NAND_B),
+     .S(net3));
+
+endmodule

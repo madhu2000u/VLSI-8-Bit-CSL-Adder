@@ -1,0 +1,43 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sim_8_Bit_CSL_Adder"
+  repList "systemVerilog behavioral_sv functional_sv verilog_sv behavioral functional verilog schematic symbol"
+  stopList "systemVerilog verilog_sv verilog symbol"
+  globalList "gnd!"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/home5/msudhanan/ese555workingdir/sim_8_Bit_CSL_Adder_svrun1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( net
+( "gnd!" "cds_globals.gnd_" )
+ )
+( model
+( "8_Bit_CSL_Adder/2-to-1-mux/schematic" "cdsModule_1" )
+( "D_flip_flop/tristate_inverter/schematic" "tristate_inverter" )
+( "D_flip_flop/transmission_gate/schematic" "transmission_gate" )
+( "D_flip_flop/nand/schematic" "nand_" )
+( "8_Bit_CSL_Adder/sim_8_Bit_CSL_Adder/schematic" "sim_8_Bit_CSL_Adder" )
+( "D_flip_flop/D_flip_flop/schematic" "D_flip_flop" )
+( "D_flip_flop/inverter/schematic" "inverter" )
+( "8_Bit_CSL_Adder/1_bit_mirror_full_adder/schematic" "cdsModule_0" )
+( "8_Bit_CSL_Adder/8_Bit_CSL_Adder/schematic" "cdsModule_2" )
+( "D_flip_flop/tristate_nand/schematic" "tristate_nand" )
+ )
+( "tristate_nand" "ihnl/cds6/map" )
+( "sim_8_Bit_CSL_Adder" "ihnl/cds9/map" )
+( "tristate_inverter" "ihnl/cds5/map" )
+( "D_flip_flop" "ihnl/cds7/map" )
+( "inverter" "ihnl/cds1/map" )
+( "cdsModule_2" "ihnl/cds8/map" )
+( "transmission_gate" "ihnl/cds3/map" )
+( "cdsModule_1" "ihnl/cds2/map" )
+( "nand_" "ihnl/cds4/map" )
+( "cdsModule_0" "ihnl/cds0/map" )
+ )

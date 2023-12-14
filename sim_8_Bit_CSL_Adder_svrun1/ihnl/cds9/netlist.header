@@ -1,0 +1,71 @@
+// Library - 8_Bit_CSL_Adder, Cell - sim_8_Bit_CSL_Adder, View -
+//schematic
+// LAST TIME SAVED: Dec 11 20:33:26 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module sim_8_Bit_CSL_Adder (  );
+
+wire Cout ;
+
+wire S7 ;
+
+wire S6 ;
+
+wire S5 ;
+
+wire S4 ;
+
+wire S3 ;
+
+wire S2 ;
+
+wire S1 ;
+
+wire S0 ;
+
+wire RESET ;
+
+wire VDD ;
+
+wire CLK_MAIN ;
+
+wire A0 ;
+
+wire A1 ;
+
+wire A2 ;
+
+wire A3 ;
+
+wire A4 ;
+
+wire A5 ;
+
+wire A6 ;
+
+wire A7 ;
+
+wire B0 ;
+
+wire B1 ;
+
+wire B2 ;
+
+wire B3 ;
+
+wire B4 ;
+
+wire B5 ;
+
+wire B6 ;
+
+wire B7 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "sim_8_Bit_CSL_Adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

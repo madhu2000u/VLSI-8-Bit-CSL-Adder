@@ -1,0 +1,14 @@
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE US_8ths   $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE basic     $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+DEFINE NCSU_TechLib_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE NCSU_Devices_FreePDK45  $PDK_DIR/ncsu_basekit/lib/NCSU_Devices_FreePDK45
+DEFINE freepdk_cells $PDK_DIR/osu_soc/lib/freepdk45_cells
+#Removed by ddDeleteObj: DEFINE demo1 /home/home5/msudhanan/ese555workingdir/demo1
+DEFINE inverter /home/home5/msudhanan/ese555workingdir/inverter
+DEFINE test /home/home5/msudhanan/555test/test
+DEFINE D_FLIPFLOP /home/home5/msudhanan/ese555workingdir/D_FLIPFLOP
+#Removed by ddDeleteObj: DEFINE D#2dflip#2dflop /home/home5/msudhanan/ese555workingdir/D#2dflip#2dflop
+DEFINE D_flip_flop /home/home5/msudhanan/ese555workingdir/D_flip_flop
+DEFINE 8_Bit_CSL_Adder /home/home5/msudhanan/ese555workingdir/8_Bit_CSL_Adder

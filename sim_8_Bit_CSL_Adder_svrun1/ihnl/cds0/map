@@ -1,0 +1,6 @@
+( ( net
+( "~Cout" "cdsNet1" )
+( "~S" "cdsNet0" )
+ )
+( "1_bit_mirror_full_adder" "cdsModule_0" )
+ )

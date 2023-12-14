@@ -1,0 +1,24 @@
+// Library - D_flip_flop, Cell - transmission_gate, View - schematic
+// LAST TIME SAVED: Nov 18 04:38:15 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module transmission_gate ( 
+inout   GND, 
+inout   VDD, 
+inout   tg_OUT, 
+input   CLK, 
+input   tg_IN, 
+input  cdsNet0 );
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "transmission_gate";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+PMOS_VTL  tg1_pmos ( .D(tg_OUT), .B(VDD), .G(CLK), .S(tg_IN));
+NMOS_VTL  M0 ( .D(tg_OUT), .B(GND), .G(cdsNet0), .S(tg_IN));
+
+endmodule

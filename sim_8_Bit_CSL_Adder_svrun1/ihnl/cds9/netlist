@@ -1,0 +1,105 @@
+// Library - 8_Bit_CSL_Adder, Cell - sim_8_Bit_CSL_Adder, View -
+//schematic
+// LAST TIME SAVED: Dec 11 20:33:26 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module sim_8_Bit_CSL_Adder (  );
+
+wire Cout ;
+
+wire S7 ;
+
+wire S6 ;
+
+wire S5 ;
+
+wire S4 ;
+
+wire S3 ;
+
+wire S2 ;
+
+wire S1 ;
+
+wire S0 ;
+
+wire RESET ;
+
+wire VDD ;
+
+wire CLK_MAIN ;
+
+wire A0 ;
+
+wire A1 ;
+
+wire A2 ;
+
+wire A3 ;
+
+wire A4 ;
+
+wire A5 ;
+
+wire A6 ;
+
+wire A7 ;
+
+wire B0 ;
+
+wire B1 ;
+
+wire B2 ;
+
+wire B3 ;
+
+wire B4 ;
+
+wire B5 ;
+
+wire B6 ;
+
+wire B7 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "sim_8_Bit_CSL_Adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+cdsModule_2 I1 ( CLK_MAIN, Cout, RESET, S0, S1, S2, S3, S4, S5, S6, S7,
+     cds_globals.gnd_, VDD, A0, A1, A2, A3, A4, A5, A6, A7, B0, B1, B2,
+     B3, B4, B5, B6, B7, cds_globals.gnd_);
+vpulse #(0.025, 0.025)   V25 ( .PLUS(CLK_MAIN),
+     .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V24 ( .PLUS(RESET), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V23 ( .PLUS(B7), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V22 ( .PLUS(B6), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V21 ( .PLUS(B5), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V20 ( .PLUS(B4), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V19 ( .PLUS(B3), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V18 ( .PLUS(B2), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V17 ( .PLUS(B1), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V16 ( .PLUS(B0), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V7 ( .PLUS(A7), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V6 ( .PLUS(A6), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V5 ( .PLUS(A5), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V4 ( .PLUS(A4), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V3 ( .PLUS(A3), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V2 ( .PLUS(A2), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V1 ( .PLUS(A1), .MINUS(cds_globals.gnd_));
+vpulse #(0.025, 0.025)   V0 ( .PLUS(A0), .MINUS(cds_globals.gnd_));
+cap  C15 ( .MINUS(cds_globals.gnd_), .PLUS(Cout));
+cap  C14 ( .MINUS(cds_globals.gnd_), .PLUS(S7));
+cap  C13 ( .MINUS(cds_globals.gnd_), .PLUS(S6));
+cap  C12 ( .MINUS(cds_globals.gnd_), .PLUS(S5));
+cap  C8 ( .MINUS(cds_globals.gnd_), .PLUS(S1));
+cap  C11 ( .MINUS(cds_globals.gnd_), .PLUS(S4));
+cap  C10 ( .MINUS(cds_globals.gnd_), .PLUS(S3));
+cap  C9 ( .MINUS(cds_globals.gnd_), .PLUS(S2));
+cap  C0 ( .MINUS(cds_globals.gnd_), .PLUS(S0));
+vdc  V8 ( .PLUS(VDD), .MINUS(cds_globals.gnd_));
+
+endmodule

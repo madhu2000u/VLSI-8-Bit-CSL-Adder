@@ -1,0 +1,38 @@
+// Library - D_flip_flop, Cell - D_flip_flop, View - schematic
+// LAST TIME SAVED: Nov 19 04:59:45 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module D_flip_flop ( 
+output   Q, 
+inout   CLK_MAIN, 
+inout   GND, 
+inout   RESET, 
+inout   VDD, 
+input   D );
+
+wire net1 ;
+
+wire net5 ;
+
+wire net8 ;
+
+wire cdsNet1 ;
+
+wire net6 ;
+
+wire net10 ;
+
+wire net2 ;
+
+wire CLK ;
+
+wire cdsNet0 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "D_flip_flop";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

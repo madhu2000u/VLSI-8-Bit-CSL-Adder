@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "D_flip_flop"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/home5/msudhanan/ese555workingdir"
+ )
+( model
+( "8_Bit_CSL_Adder/D_flip_flop/schematic" "D_flip_flop" )
+( "D_flip_flop/tristate_inverter/schematic" "tristate_inverter" )
+( "D_flip_flop/transmission_gate/schematic" "transmission_gate" )
+( "D_flip_flop/nand/schematic" "nand" )
+( "D_flip_flop/inverter/schematic" "inverter" )
+( "D_flip_flop/tristate_nand/schematic" "tristate_nand" )
+ )
+( "tristate_nand" "ihnl/cds3/map" )
+( "tristate_inverter" "ihnl/cds2/map" )
+( "D_flip_flop" "ihnl/cds5/map" )
+( "inverter" "ihnl/cds4/map" )
+( "transmission_gate" "ihnl/cds0/map" )
+( "nand" "ihnl/cds1/map" )
+ )

@@ -1,0 +1,27 @@
+// Library - D_flip_flop, Cell - nand, View - schematic
+// LAST TIME SAVED: Nov 13 23:15:17 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module nand_ ( 
+output   NAND_VOUT, 
+inout   GND, 
+inout   VDD, 
+input   NAND_A, 
+input   NAND_B );
+
+wire net1 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "nand";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+NMOS_VTL  nand_nmos_2 ( .D(net1), .B(GND), .G(NAND_B), .S(GND));
+NMOS_VTL  nand_nmos_1 ( .D(NAND_VOUT), .B(GND), .G(NAND_A), .S(net1));
+PMOS_VTL  nand_pmos_2 ( .D(NAND_VOUT), .B(VDD), .G(NAND_A), .S(VDD));
+PMOS_VTL  nand_pmos_1 ( .D(NAND_VOUT), .B(VDD), .G(NAND_B), .S(VDD));
+
+endmodule

@@ -1,0 +1,19 @@
+tmLCVDPLList = '((nil viewType "schematicSymbol" viewName "symbol"
+    cellName "PMOS_VTL" libName "NCSU_Devices_FreePDK45"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "NMOS_VTL" libName "NCSU_Devices_FreePDK45"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "vpulse" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "cap" libName "analogLib"
+    ) 
+    (nil viewType "schematicSymbol" viewName "symbol"
+    cellName "vdc" libName "analogLib"
+    )
+)
+xxxInternalGlobAliasList = '(nil globalExists t)
+hnlVerilogCdsGlobalsFileName = "cds_globals"
+hnlVerilogCdsGlobalsModuleName = "cds_globals"

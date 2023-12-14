@@ -1,0 +1,52 @@
+// Library - D_flip_flop, Cell - D_flip_flop, View - schematic
+// LAST TIME SAVED: Nov 19 04:59:45 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module D_flip_flop ( 
+output   Q, 
+inout   CLK_MAIN, 
+inout   GND, 
+inout   RESET, 
+inout   VDD, 
+input   D );
+
+wire net1 ;
+
+wire net5 ;
+
+wire net8 ;
+
+wire cdsNet1 ;
+
+wire net6 ;
+
+wire net10 ;
+
+wire net2 ;
+
+wire CLK ;
+
+wire cdsNet0 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "D_flip_flop";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+transmission_gate tg1 ( GND, VDD, net1, CLK, net2, cdsNet0);
+transmission_gate tg2 ( GND, VDD, net5, cdsNet0, net6, CLK);
+nand_ nand_ ( net6, GND, VDD, cdsNet1, net1);
+tristate_inverter t_i1 ( net1, GND, VDD, CLK, net6, cdsNet0);
+tristate_nand t_n ( net5, GND, VDD, CLK, net10, cdsNet1, cdsNet0);
+inverter Inst_2 ( cdsNet1, GND, VDD, RESET);
+inverter Inst_3 ( CLK, GND, VDD, cdsNet0);
+inverter clk_inv ( cdsNet0, GND, VDD, CLK_MAIN);
+inverter q_inv ( Q, GND, VDD, net5);
+inverter inv_loopback ( net10, GND, VDD, net5);
+inverter Inst_4 ( net2, GND, VDD, net8);
+inverter d_inv ( net8, GND, VDD, D);
+
+endmodule

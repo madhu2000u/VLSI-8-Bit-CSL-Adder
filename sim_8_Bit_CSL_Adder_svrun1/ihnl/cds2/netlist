@@ -1,0 +1,29 @@
+// Library - 8_Bit_CSL_Adder, Cell - 2-to-1-mux, View - schematic
+// LAST TIME SAVED: Dec  9 10:14:21 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_1 ( 
+output   mux_out, 
+inout   GND, 
+inout   VDD, 
+input   A, 
+input   B, 
+input   Sel );
+
+wire cdsNet0 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "2-to-1-mux";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+PMOS_VTL  M1 ( .D(B), .B(VDD), .G(cdsNet0), .S(mux_out));
+PMOS_VTL  M0 ( .D(A), .B(VDD), .G(Sel), .S(mux_out));
+NMOS_VTL  M3 ( .D(B), .B(GND), .G(Sel), .S(mux_out));
+NMOS_VTL  M2 ( .D(A), .B(GND), .G(cdsNet0), .S(mux_out));
+inverter I0 ( cdsNet0, GND, VDD, Sel);
+
+endmodule

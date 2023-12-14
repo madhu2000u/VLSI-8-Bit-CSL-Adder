@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Sat Nov 18 19:07:07 2023 " "v2014.4_28.20" "-xrc -pdb -rcc -turbo 1 /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"
+"Sat Nov 18 19:07:11 2023 " "v2014.4_28.20" "-xrc -fmt -all /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"

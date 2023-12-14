@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+D_flip_flop/transmission_gate/schematic transmission_gate
+D_flip_flop/inverter/schematic inverter
+8_Bit_CSL_Adder/D_flip_flop/schematic D_flip_flop
+D_flip_flop/tristate_nand/schematic tristate_nand
+D_flip_flop/tristate_inverter/schematic tristate_inverter
+D_flip_flop/nand/schematic nand
+$endmodel
+$net
+$endnet
+$param
+$endparam

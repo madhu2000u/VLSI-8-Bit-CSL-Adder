@@ -1,0 +1,106 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  8_Bit_CSL_Adder
+* Top Cell Name: D_flip_flop
+* View Name:     schematic
+* Netlisted on:  Dec 13 18:27:29 2023
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    transmission_gate
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT transmission_gate CLK GND VDD tg_IN tg_OUT ~CLK
+*.PININFO CLK:I tg_IN:I ~CLK:I GND:B VDD:B tg_OUT:B
+Mtg1_pmos tg_OUT CLK tg_IN VDD PMOS_VTL W=160.0n L=50n m=1
+MM0 tg_OUT ~CLK tg_IN GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    nand
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand GND NAND_A NAND_B NAND_VOUT VDD
+*.PININFO NAND_A:I NAND_B:I NAND_VOUT:O GND:B VDD:B
+Mnand_nmos_2 net1 NAND_B GND GND NMOS_VTL W=100n L=50n m=1
+Mnand_nmos_1 NAND_VOUT NAND_A net1 GND NMOS_VTL W=100n L=50n m=1
+Mnand_pmos_2 NAND_VOUT NAND_A VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mnand_pmos_1 NAND_VOUT NAND_B VDD VDD PMOS_VTL W=160.0n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    tristate_inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristate_inverter CLK GND VDD VIN VOUT ~CLK
+*.PININFO CLK:I VIN:I ~CLK:I VOUT:O GND:B VDD:B
+Mt_i_pmos_state_ctrl net1 ~CLK VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_i_pmos VOUT VIN net1 VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_i_nmos_state_ctrl net2 CLK GND GND NMOS_VTL W=100n L=50n m=1
+Mt_i_nmos VOUT VIN net2 GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    tristate_nand
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristate_nand CLK GND VDD t_NAND_A t_NAND_B t_NAND_VOUT ~CLK
+*.PININFO CLK:I t_NAND_A:I t_NAND_B:I ~CLK:I t_NAND_VOUT:O GND:B VDD:B
+Mt_nand_nmos_state_ctrl net2 ~CLK GND GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_nmos_2 net1 t_NAND_B net2 GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_nmos_1 t_NAND_VOUT t_NAND_A net1 GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_pmos_state_ctrl net3 CLK VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_nand_pmos_2 t_NAND_VOUT t_NAND_A net3 VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_nand_pmos_1 t_NAND_VOUT t_NAND_B net3 VDD PMOS_VTL W=160.0n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter GND VDD VIN VOUT
+*.PININFO VIN:I VOUT:O GND:B VDD:B
+MM0 VOUT VIN VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM1 VOUT VIN GND GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: 8_Bit_CSL_Adder
+* Cell Name:    D_flip_flop
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT D_flip_flop CLK_MAIN D GND Q RESET VDD
+*.PININFO D:I Q:O CLK_MAIN:B GND:B RESET:B VDD:B
+Xtg1 CLK GND VDD net2 net1 ~CLK / transmission_gate
+Xtg2 ~CLK GND VDD net6 net5 CLK / transmission_gate
+Xnand GND ~RESET net1 net6 VDD / nand
+Xt_i1 CLK GND VDD net6 net1 ~CLK / tristate_inverter
+Xt_n CLK GND VDD net10 ~RESET net5 ~CLK / tristate_nand
+X~reset GND VDD RESET ~RESET / inverter
+X~clk_inv GND VDD ~CLK CLK / inverter
+Xclk_inv GND VDD CLK_MAIN ~CLK / inverter
+Xq_inv GND VDD net5 Q / inverter
+Xinv_loopback GND VDD net5 net10 / inverter
+X~d_inv GND VDD net8 net2 / inverter
+Xd_inv GND VDD D net8 / inverter
+.ENDS
+

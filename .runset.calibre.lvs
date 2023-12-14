@@ -1,0 +1,24 @@
+*lvsRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreLVS.rul
+*lvsRunDir: /home/home5/msudhanan/ese555workingdir
+*lvsLayoutPaths: D_flip_flop.calibre.db
+*lvsLayoutPrimary: D_flip_flop
+*lvsLayoutLibrary: 8_Bit_CSL_Adder
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: D_flip_flop.src.net
+*lvsSourcePrimary: D_flip_flop
+*lvsSourceLibrary: 8_Bit_CSL_Adder
+*lvsSourceView: schematic
+*lvsSourceGetFromViewer: 1
+*lvsSpiceFile: D_flip_flop.sp
+*lvsERCDatabase: D_flip_flop.erc.results
+*lvsERCSummaryFile: D_flip_flop.erc.summary
+*lvsReportFile: D_flip_flop.lvs.report
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: 8_Bit_CSL_Adder
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: D_flip_flop.def

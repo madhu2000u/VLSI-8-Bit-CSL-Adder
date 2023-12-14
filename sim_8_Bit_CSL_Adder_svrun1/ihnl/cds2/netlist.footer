@@ -1,0 +1,7 @@
+PMOS_VTL  M1 ( .D(B), .B(VDD), .G(cdsNet0), .S(mux_out));
+PMOS_VTL  M0 ( .D(A), .B(VDD), .G(Sel), .S(mux_out));
+NMOS_VTL  M3 ( .D(B), .B(GND), .G(Sel), .S(mux_out));
+NMOS_VTL  M2 ( .D(A), .B(GND), .G(cdsNet0), .S(mux_out));
+inverter I0 ( cdsNet0, GND, VDD, Sel);
+
+endmodule

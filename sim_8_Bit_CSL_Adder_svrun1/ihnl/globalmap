@@ -1,0 +1,23 @@
+CADENCE IHNL11140
+$model
+8_Bit_CSL_Adder/sim_8_Bit_CSL_Adder/schematic sim_8_Bit_CSL_Adder
+D_flip_flop/transmission_gate/schematic transmission_gate
+vpulse vpulse
+PMOS_VTL PMOS_VTL
+D_flip_flop/inverter/schematic inverter
+D_flip_flop/D_flip_flop/schematic D_flip_flop
+cap cap
+8_Bit_CSL_Adder/8_Bit_CSL_Adder/schematic cdsModule_2
+D_flip_flop/tristate_nand/schematic tristate_nand
+NMOS_VTL NMOS_VTL
+D_flip_flop/tristate_inverter/schematic tristate_inverter
+vdc vdc
+D_flip_flop/nand/schematic nand_
+8_Bit_CSL_Adder/1_bit_mirror_full_adder/schematic cdsModule_0
+8_Bit_CSL_Adder/2-to-1-mux/schematic cdsModule_1
+$endmodel
+$net
+gnd! cds_globals.gnd_
+$endnet
+$param
+$endparam

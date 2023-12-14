@@ -1,0 +1,117 @@
+* File: D_flip_flop.pex.netlist
+* Created: Sat Nov 18 19:07:11 2023
+* Program "Calibre xRC"
+* Version "v2014.4_28.20"
+* 
+.include "D_flip_flop.pex.netlist.pex"
+.subckt D_flip_flop  D CLK_MAIN RESET GND VDD Q
+* 
+* Q	Q
+* VDD	VDD
+* GND	GND
+* RESET	RESET
+* CLK_MAIN	CLK_MAIN
+* D	D
+mXd_inv/MM1 N_NET8_Xd_inv/MM1_d N_D_Xd_inv/MM1_g N_GND_Xd_inv/MM1_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mX:d_inv/MM1 N_NET2_X:d_inv/MM1_d N_NET8_X:d_inv/MM1_g N_GND_X:d_inv/MM1_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mXtg1/MM0 N_NET1_Xtg1/MM0_d N_:CLK_Xtg1/MM0_g N_NET2_Xtg1/MM0_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mXnand/Mnand_nmos_2 XNAND/NET1 N_NET1_Xnand/Mnand_nmos_2_g
++ N_GND_Xnand/Mnand_nmos_2_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07
++ AD=1.5e-14 AS=1.2e-14 PD=5e-07 PS=4.4e-07
+mXnand/Mnand_nmos_1 N_NET6_Xnand/Mnand_nmos_1_d N_:RESET_Xnand/Mnand_nmos_1_g
++ XNAND/NET1 N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.5e-14
++ PD=4.4e-07 PS=5e-07
+mXt_i1/Mt_i_nmos N_NET1_Xt_i1/Mt_i_nmos_d N_NET6_Xt_i1/Mt_i_nmos_g XT_I1/NET2
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.4e-14 PD=4.4e-07
++ PS=4.8e-07
+mXt_i1/Mt_i_nmos_state_ctrl XT_I1/NET2 N_CLK_Xt_i1/Mt_i_nmos_state_ctrl_g
++ N_GND_Xt_i1/Mt_i_nmos_state_ctrl_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07
++ AD=1.4e-14 AS=1.2e-14 PD=4.8e-07 PS=4.4e-07
+mXtg2/MM0 N_NET5_Xtg2/MM0_d N_CLK_Xtg2/MM0_g N_NET6_Xtg2/MM0_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mXclk_inv/MM1 N_:CLK_Xclk_inv/MM1_d N_CLK_MAIN_Xclk_inv/MM1_g
++ N_GND_Xclk_inv/MM1_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14
++ AS=1.2e-14 PD=4.4e-07 PS=4.4e-07
+mX:clk_inv/MM1 N_CLK_X:clk_inv/MM1_d N_:CLK_X:clk_inv/MM1_g
++ N_GND_X:clk_inv/MM1_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14
++ AS=1.2e-14 PD=4.4e-07 PS=4.4e-07
+mX:reset/MM1 N_:RESET_X:reset/MM1_d N_RESET_X:reset/MM1_g N_GND_X:reset/MM1_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mXt_n/Mt_nand_nmos_state_ctrl XT_N/NET2 N_:CLK_Xt_n/Mt_nand_nmos_state_ctrl_g
++ N_GND_Xt_n/Mt_nand_nmos_state_ctrl_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08
++ W=1e-07 AD=1.4e-14 AS=1.2e-14 PD=4.8e-07 PS=4.4e-07
+mXt_n/Mt_nand_nmos_2 XT_N/NET1 N_:RESET_Xt_n/Mt_nand_nmos_2_g XT_N/NET2
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.5e-14 AS=1.4e-14 PD=5e-07
++ PS=4.8e-07
+mXt_n/Mt_nand_nmos_1 N_NET5_Xt_n/Mt_nand_nmos_1_d N_NET10_Xt_n/Mt_nand_nmos_1_g
++ XT_N/NET1 N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.5e-14
++ PD=4.4e-07 PS=5e-07
+mXinv_loopback/MM1 N_NET10_Xinv_loopback/MM1_d N_NET5_Xinv_loopback/MM1_g
++ N_GND_Xinv_loopback/MM1_s N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07
++ AD=1.2e-14 AS=1.2e-14 PD=4.4e-07 PS=4.4e-07
+mXq_inv/MM1 N_Q_Xq_inv/MM1_d N_NET5_Xq_inv/MM1_g N_GND_Xq_inv/MM1_s
++ N_GND_Xd_inv/MM1_b NMOS_VTL L=5e-08 W=1e-07 AD=1.2e-14 AS=1.2e-14 PD=4.4e-07
++ PS=4.4e-07
+mXd_inv/MM0 N_NET8_Xd_inv/MM0_d N_D_Xd_inv/MM0_g N_VDD_Xd_inv/MM0_s
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14 AS=1.92e-14
++ PD=5.6e-07 PS=5.6e-07
+mX:d_inv/MM0 N_NET2_X:d_inv/MM0_d N_NET8_X:d_inv/MM0_g N_VDD_X:d_inv/MM0_s
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14 AS=1.92e-14
++ PD=5.6e-07 PS=5.6e-07
+mXtg1/Mtg1_pmos N_NET1_Xtg1/Mtg1_pmos_d N_CLK_Xtg1/Mtg1_pmos_g
++ N_NET2_Xtg1/Mtg1_pmos_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=1.92e-14 AS=1.92e-14 PD=5.6e-07 PS=5.6e-07
+mXnand/Mnand_pmos_1 N_NET6_Xnand/Mnand_pmos_1_d N_NET1_Xnand/Mnand_pmos_1_g
++ N_VDD_Xnand/Mnand_pmos_1_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=2.4e-14 AS=1.92e-14 PD=6.2e-07 PS=5.6e-07
+mXnand/Mnand_pmos_2 N_NET6_Xnand/Mnand_pmos_1_d N_:RESET_Xnand/Mnand_pmos_2_g
++ N_VDD_Xnand/Mnand_pmos_2_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=2.4e-14 AS=1.92e-14 PD=6.2e-07 PS=5.6e-07
+mXt_i1/Mt_i_pmos N_NET1_Xt_i1/Mt_i_pmos_d N_NET6_Xt_i1/Mt_i_pmos_g XT_I1/NET1
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14 AS=2.24e-14
++ PD=5.6e-07 PS=6e-07
+mXt_i1/Mt_i_pmos_state_ctrl XT_I1/NET1 N_:CLK_Xt_i1/Mt_i_pmos_state_ctrl_g
++ N_VDD_Xt_i1/Mt_i_pmos_state_ctrl_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08
++ W=1.6e-07 AD=2.24e-14 AS=1.92e-14 PD=6e-07 PS=5.6e-07
+mXtg2/Mtg1_pmos N_NET5_Xtg2/Mtg1_pmos_d N_:CLK_Xtg2/Mtg1_pmos_g
++ N_NET6_Xtg2/Mtg1_pmos_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=1.92e-14 AS=1.92e-14 PD=5.6e-07 PS=5.6e-07
+mXclk_inv/MM0 N_:CLK_Xclk_inv/MM0_d N_CLK_MAIN_Xclk_inv/MM0_g
++ N_VDD_Xclk_inv/MM0_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14
++ AS=1.92e-14 PD=5.6e-07 PS=5.6e-07
+mX:clk_inv/MM0 N_CLK_X:clk_inv/MM0_d N_:CLK_X:clk_inv/MM0_g
++ N_VDD_X:clk_inv/MM0_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=1.92e-14 AS=1.92e-14 PD=5.6e-07 PS=5.6e-07
+mX:reset/MM0 N_:RESET_X:reset/MM0_d N_RESET_X:reset/MM0_g N_VDD_X:reset/MM0_s
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14 AS=1.92e-14
++ PD=5.6e-07 PS=5.6e-07
+mXt_n/Mt_nand_pmos_state_ctrl N_XT_N/NET3_Xt_n/Mt_nand_pmos_state_ctrl_d
++ N_CLK_Xt_n/Mt_nand_pmos_state_ctrl_g N_VDD_Xt_n/Mt_nand_pmos_state_ctrl_s
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=2.4e-14 AS=1.92e-14
++ PD=6.2e-07 PS=5.6e-07
+mXt_n/Mt_nand_pmos_1 N_NET5_Xt_n/Mt_nand_pmos_1_d N_:RESET_Xt_n/Mt_nand_pmos_1_g
++ N_XT_N/NET3_Xt_n/Mt_nand_pmos_state_ctrl_d N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08
++ W=1.6e-07 AD=2.4e-14 AS=2.4e-14 PD=6.2e-07 PS=6.2e-07
+mXt_n/Mt_nand_pmos_2 N_NET5_Xt_n/Mt_nand_pmos_1_d N_NET10_Xt_n/Mt_nand_pmos_2_g
++ N_XT_N/NET3_Xt_n/Mt_nand_pmos_2_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08
++ W=1.6e-07 AD=2.4e-14 AS=1.92e-14 PD=6.2e-07 PS=5.6e-07
+mXinv_loopback/MM0 N_NET10_Xinv_loopback/MM0_d N_NET5_Xinv_loopback/MM0_g
++ N_VDD_Xinv_loopback/MM0_s N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07
++ AD=1.92e-14 AS=1.92e-14 PD=5.6e-07 PS=5.6e-07
+mXq_inv/MM0 N_Q_Xq_inv/MM0_d N_NET5_Xq_inv/MM0_g N_VDD_Xq_inv/MM0_s
++ N_VDD_Xd_inv/MM0_b PMOS_VTL L=5e-08 W=1.6e-07 AD=1.92e-14 AS=1.92e-14
++ PD=5.6e-07 PS=5.6e-07
+*
+.include "D_flip_flop.pex.netlist.D_FLIP_FLOP.pxi"
+*
+.ends
+*
+*

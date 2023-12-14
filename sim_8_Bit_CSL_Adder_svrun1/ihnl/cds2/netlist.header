@@ -1,0 +1,22 @@
+// Library - 8_Bit_CSL_Adder, Cell - 2-to-1-mux, View - schematic
+// LAST TIME SAVED: Dec  9 10:14:21 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_1 ( 
+output   mux_out, 
+inout   GND, 
+inout   VDD, 
+input   A, 
+input   B, 
+input   Sel );
+
+wire cdsNet0 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "2-to-1-mux";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

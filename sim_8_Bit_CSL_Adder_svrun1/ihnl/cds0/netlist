@@ -1,0 +1,68 @@
+// Library - 8_Bit_CSL_Adder, Cell - 1_bit_mirror_full_adder, View -
+//schematic
+// LAST TIME SAVED: Dec  8 20:39:18 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_0 ( 
+output  cdsNet1, 
+output  cdsNet0, 
+inout   GND, 
+inout   VDD, 
+input   A, 
+input   B, 
+input   Cin );
+
+wire net10 ;
+
+wire net11 ;
+
+wire net13 ;
+
+wire net14 ;
+
+wire net25 ;
+
+wire net27 ;
+
+wire net29 ;
+
+wire net30 ;
+
+wire net49 ;
+
+wire net1 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "1_bit_mirror_full_adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+PMOS_VTL  M22 ( .D(net49), .B(VDD), .G(B), .S(VDD));
+PMOS_VTL  M20 ( .D(net1), .B(VDD), .G(B), .S(VDD));
+PMOS_VTL  M14 ( .D(cdsNet0), .B(net29), .G(Cin), .S(net29));
+PMOS_VTL  M13 ( .D(cdsNet0), .B(net1), .G(cdsNet1), .S(net1));
+PMOS_VTL  M12 ( .D(net29), .B(net49), .G(A), .S(net49));
+PMOS_VTL  M11 ( .D(net1), .B(VDD), .G(Cin), .S(VDD));
+PMOS_VTL  M10 ( .D(net1), .B(VDD), .G(A), .S(VDD));
+PMOS_VTL  M4 ( .D(cdsNet1), .B(net13), .G(A), .S(net13));
+PMOS_VTL  M3 ( .D(cdsNet1), .B(net10), .G(Cin), .S(net10));
+PMOS_VTL  M2 ( .D(net13), .B(VDD), .G(B), .S(VDD));
+PMOS_VTL  M1 ( .D(net10), .B(VDD), .G(B), .S(VDD));
+PMOS_VTL  M0 ( .D(net10), .B(VDD), .G(A), .S(VDD));
+NMOS_VTL  M23 ( .D(net25), .B(net25), .G(B), .S(GND));
+NMOS_VTL  M21 ( .D(net27), .B(net27), .G(B), .S(GND));
+NMOS_VTL  M19 ( .D(net27), .B(net27), .G(A), .S(GND));
+NMOS_VTL  M18 ( .D(net27), .B(net27), .G(Cin), .S(GND));
+NMOS_VTL  M17 ( .D(net30), .B(net30), .G(A), .S(net25));
+NMOS_VTL  M16 ( .D(cdsNet0), .B(cdsNet0), .G(Cin), .S(net30));
+NMOS_VTL  M15 ( .D(cdsNet0), .B(cdsNet0), .G(cdsNet1), .S(net27));
+NMOS_VTL  M9 ( .D(net11), .B(net11), .G(A), .S(GND));
+NMOS_VTL  M8 ( .D(net11), .B(net11), .G(B), .S(GND));
+NMOS_VTL  M7 ( .D(net14), .B(net14), .G(B), .S(GND));
+NMOS_VTL  M6 ( .D(cdsNet1), .B(cdsNet1), .G(A), .S(net14));
+NMOS_VTL  M5 ( .D(cdsNet1), .B(cdsNet1), .G(Cin), .S(net11));
+
+endmodule

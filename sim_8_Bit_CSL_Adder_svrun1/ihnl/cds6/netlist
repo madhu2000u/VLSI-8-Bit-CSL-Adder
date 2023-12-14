@@ -1,0 +1,40 @@
+// Library - D_flip_flop, Cell - tristate_nand, View - schematic
+// LAST TIME SAVED: Nov 18 04:36:10 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module tristate_nand ( 
+output   t_NAND_VOUT, 
+inout   GND, 
+inout   VDD, 
+input   CLK, 
+input   t_NAND_A, 
+input   t_NAND_B, 
+input  cdsNet0 );
+
+wire net1 ;
+
+wire net2 ;
+
+wire net3 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "D_flip_flop";
+    specparam CDS_CELLNAME = "tristate_nand";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+NMOS_VTL  t_nand_nmos_state_ctrl ( .D(net2), .B(GND), .G(cdsNet0),
+     .S(GND));
+NMOS_VTL  t_nand_nmos_2 ( .D(net1), .B(GND), .G(t_NAND_B), .S(net2));
+NMOS_VTL  t_nand_nmos_1 ( .D(t_NAND_VOUT), .B(GND), .G(t_NAND_A),
+     .S(net1));
+PMOS_VTL  t_nand_pmos_state_ctrl ( .D(net3), .B(VDD), .G(CLK),
+     .S(VDD));
+PMOS_VTL  t_nand_pmos_2 ( .D(t_NAND_VOUT), .B(VDD), .G(t_NAND_A),
+     .S(net3));
+PMOS_VTL  t_nand_pmos_1 ( .D(t_NAND_VOUT), .B(VDD), .G(t_NAND_B),
+     .S(net3));
+
+endmodule

@@ -1,0 +1,42 @@
+// Library - 8_Bit_CSL_Adder, Cell - 1_bit_mirror_full_adder, View -
+//schematic
+// LAST TIME SAVED: Dec  8 20:39:18 2023
+// NETLIST TIME: Dec 11 20:50:09 2023
+`timescale 1ns / 1ns 
+
+module cdsModule_0 ( 
+output  cdsNet1, 
+output  cdsNet0, 
+inout   GND, 
+inout   VDD, 
+input   A, 
+input   B, 
+input   Cin );
+
+wire net10 ;
+
+wire net11 ;
+
+wire net13 ;
+
+wire net14 ;
+
+wire net25 ;
+
+wire net27 ;
+
+wire net29 ;
+
+wire net30 ;
+
+wire net49 ;
+
+wire net1 ;
+
+
+specify 
+    specparam CDS_LIBNAME  = "8_Bit_CSL_Adder";
+    specparam CDS_CELLNAME = "1_bit_mirror_full_adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

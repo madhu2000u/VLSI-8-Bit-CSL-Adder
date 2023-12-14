@@ -1,0 +1,4 @@
+PMOS_VTL  M0 ( .D(VOUT), .B(VDD), .G(VIN), .S(VDD));
+NMOS_VTL  M1 ( .D(VOUT), .B(GND), .G(VIN), .S(GND));
+
+endmodule

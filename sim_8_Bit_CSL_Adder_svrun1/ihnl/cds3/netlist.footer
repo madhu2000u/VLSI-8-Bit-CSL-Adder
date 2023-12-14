@@ -1,0 +1,4 @@
+PMOS_VTL  tg1_pmos ( .D(tg_OUT), .B(VDD), .G(CLK), .S(tg_IN));
+NMOS_VTL  M0 ( .D(tg_OUT), .B(GND), .G(cdsNet0), .S(tg_IN));
+
+endmodule

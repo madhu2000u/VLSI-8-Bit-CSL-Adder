@@ -1,0 +1,14 @@
+transmission_gate tg1 ( GND, VDD, net1, CLK, net2, cdsNet0);
+transmission_gate tg2 ( GND, VDD, net5, cdsNet0, net6, CLK);
+nand_ nand_ ( net6, GND, VDD, cdsNet1, net1);
+tristate_inverter t_i1 ( net1, GND, VDD, CLK, net6, cdsNet0);
+tristate_nand t_n ( net5, GND, VDD, CLK, net10, cdsNet1, cdsNet0);
+inverter Inst_2 ( cdsNet1, GND, VDD, RESET);
+inverter Inst_3 ( CLK, GND, VDD, cdsNet0);
+inverter clk_inv ( cdsNet0, GND, VDD, CLK_MAIN);
+inverter q_inv ( Q, GND, VDD, net5);
+inverter inv_loopback ( net10, GND, VDD, net5);
+inverter Inst_4 ( net2, GND, VDD, net8);
+inverter d_inv ( net8, GND, VDD, D);
+
+endmodule

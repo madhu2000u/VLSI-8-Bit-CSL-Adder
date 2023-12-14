@@ -1,0 +1,23 @@
+*pexRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibrexRC.rul
+*pexRunDir: /home/home5/msudhanan/ese555workingdir
+*pexLayoutPaths: inverter.calibre.db
+*pexLayoutPrimary: inverter
+*pexLayoutLibrary: inverter
+*pexLayoutView: layout
+*pexLayoutGetFromViewer: 1
+*pexSourcePath: inverter.src.net
+*pexSourcePrimary: inverter
+*pexSourceLibrary: inverter
+*pexSourceView: schematic
+*pexReportFile: inverter.lvs.report
+*pexPexNetlistFile: inverter.pex.netlist
+*pexPexNetlistFormat: HSPICE
+*pexPexReportFile: inverter.pex.report
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: inverter
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: inverter.def

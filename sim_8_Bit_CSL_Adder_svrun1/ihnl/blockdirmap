@@ -1,0 +1,12 @@
+CADENCE IHNL111410
+
+8_Bit_CSL_Adder 1_bit_mirror_full_adder schematic cds0
+D_flip_flop inverter schematic cds1
+8_Bit_CSL_Adder 2-to-1-mux schematic cds2
+D_flip_flop transmission_gate schematic cds3
+D_flip_flop nand schematic cds4
+D_flip_flop tristate_inverter schematic cds5
+D_flip_flop tristate_nand schematic cds6
+D_flip_flop D_flip_flop schematic cds7
+8_Bit_CSL_Adder 8_Bit_CSL_Adder schematic cds8
+8_Bit_CSL_Adder sim_8_Bit_CSL_Adder schematic cds9

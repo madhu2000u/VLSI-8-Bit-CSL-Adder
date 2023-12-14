@@ -1,0 +1,12 @@
+( ( net
+( "~RESET" "cdsNet1" )
+( "~CLK" "cdsNet0" )
+ )
+( inst
+( "nand" "nand_" )
+( "~clk_inv" "Inst_3" )
+( "~d_inv" "Inst_4" )
+( "~reset" "Inst_2" )
+ )
+( "nand" "nand_" )
+ )
