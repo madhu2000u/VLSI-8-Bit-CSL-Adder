@@ -1,8 +1,3 @@
-CADENCE IHNL11146
+CADENCE IHNL11141
 
-D_flip_flop transmission_gate schematic cds0
-D_flip_flop nand schematic cds1
-D_flip_flop tristate_inverter schematic cds2
-D_flip_flop tristate_nand schematic cds3
-D_flip_flop inverter schematic cds4
-8_Bit_CSL_Adder D_flip_flop schematic cds5
+8_Bit_CSL_Adder 1_bit_mirror_full_adder schematic cds0

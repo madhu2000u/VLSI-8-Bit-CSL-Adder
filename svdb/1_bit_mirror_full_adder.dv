@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/1_bit_mirror_full_adder.dv
+dv_start matched                                  
+dv_cell {1_bit_mirror_full_adder} {1_bit_mirror_full_adder} matched
+dv_obj_count -transformed_nets {7 7} -transformed_inst {8 8} -transformed_port {7 7}
+dv_end

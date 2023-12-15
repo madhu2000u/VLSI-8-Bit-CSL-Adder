@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/21/2022 12:53 (cpgsrv12) $
 \o Sub version:		sub-version  s266 
-\o Arguments:		-mpssession virtuoso17713 -mpshost lab38.ece.stonybrook.edu 
+\o Arguments:		-mpssession virtuoso7345 -mpshost lab38.ece.stonybrook.edu 
 \o Working Directory:	lab38.ece.stonybrook.edu:/home/home5/msudhanan/ese555workingdir
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -14,28 +14,8 @@
 \o Library Manager customization server connected.
 \a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
 \a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "1_bit_mirror_full_adder"
+\a cdsLibManager->cellLineEdit->value = "1_bit_mirror_full_adder"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
@@ -50,8 +30,8 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
 \a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->cellListBox->value = "1_bit_mirror_full_adder"
+\a cdsLibManager->cellLineEdit->value = "1_bit_mirror_full_adder"
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -59,410 +39,237 @@
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "layout"
 \a cdsLibManager->viewLineEdit->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "1_bit_mirror_full_adder"
 \a cdsLibManager->cellLineEdit->value = "1_bit_mirror_full_adder"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = "8_Bit_CSL_Adder"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "D_flip_flop"
+\a cdsLibManager->libLineEdit->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "transmission_gate"
+\a cdsLibManager->cellLineEdit->value = "transmission_gate"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "dff_sim"
+\a cdsLibManager->cellLineEdit->value = "dff_sim"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "XOR"
+\a cdsLibManager->cellLineEdit->value = "XOR"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "nand"
+\a cdsLibManager->cellLineEdit->value = "nand"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrResizeWindow(cdsLibManager list(0 0 1360 745))
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(8 31 1360 745))
+\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
+\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "sim_8_Bit_CSL_Adder"
+\a cdsLibManager->cellLineEdit->value = "sim_8_Bit_CSL_Adder"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "D_flip_flop"
+\a cdsLibManager->libLineEdit->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "D_flip_flop"
+\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "nand"
+\a cdsLibManager->cellLineEdit->value = "nand"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "transmission_gate"
+\a cdsLibManager->cellLineEdit->value = "transmission_gate"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "tristate_inverter"
+\a cdsLibManager->cellLineEdit->value = "tristate_inverter"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "tristate_nand"
+\a cdsLibManager->cellLineEdit->value = "tristate_nand"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "tristate_nand"
+\a cdsLibManager->cellLineEdit->value = "tristate_nand"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 8 0)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "D_flip_flop"
 \a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "tristate_nand"
+\a cdsLibManager->cellLineEdit->value = "tristate_nand"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup0" 43 41 2 "D_flip_flop")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CopyFromLibrary->value = "8_Bit_CSL_Adder"
-\a basicCopyForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a basicCopyForm->CopyFromLibrary->value = "D_flip_flop"
-\a basicCopyForm->CopyToLibrary->value = "D_flip_flop"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(527 205 303 316))
-\a basicCopyForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "8_Bit_CSL_Adder".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(542 297 273 133))
-\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file does not exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source library file is not valid in a different library.\n      7. A source OpenAccess cellview master file has zero size.
-\a nrSetWindowVisibility(copyProblemsDialog "show")
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a nrResizeWindow(copyProblemsDialog list(256 103 825 441))
-\a copyProblemsDialog->overwriteAll->value = t
-\a copyProblemsDialog->fixErrors->value = t
-\a copyProblemsDialog->fixErrors->value = t
-\a copyProblemsDialog->overwriteAll->value = t
-\a copyProblemsDialog->fixErrors->value = t
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(basicCopyForm)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(542 297 273 133))
-\o Batching session updates...
-\o Copy succeeded.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a nrResizeWindow(cdsLibManager list(0 0 1360 745))
+\a nrSetWindowVisibility(cdsLibManager "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(8 31 1360 745))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
 \a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellListBox->value = "1_bit_mirror_full_adder"
 \a cdsLibManager->cellLineEdit->value = "1_bit_mirror_full_adder"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "2-to-1-mux"
 \a cdsLibManager->cellLineEdit->value = "2-to-1-mux"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellListBox->value = "8_Bit_CSL_Adder"
 \a cdsLibManager->cellLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "DFF_datapath"
-\a cdsLibManager->cellLineEdit->value = "DFF_datapath"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 42 64 2 "DFF_datapath")
-\a cdsLibManager->editDeleteButton->value = t
-\a deleteForm->deleteFilterEdit->value = "*"
-\a deleteForm->notDeleteFilterEdit->value = "*"
-\a nrSetWindowVisibility(deleteForm "show")
-\a nrSetCurrentWindow(deleteForm)
-\a nrResizeWindow(deleteForm list(365 151 627 425))
-\a deleteForm->deleteListBox->value = '("DFF_datapath" )
-\a deleteForm->notDeleteListBox->value = '("XOR" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("dff_sim" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("inverter" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("nand" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("D_flip_flop_D_flip_flop" )
-\a deleteForm->notDeleteListBox->value = '("transmission_gate" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("tristate_inverter" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("tristate_nand" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->notDeleteListBox->value = '("D_flip_flop_D_flip_flop" )
-\a deleteForm->moveToDeleteButton->value = t
-\a deleteForm->OK->value = t
-\o QUESTION (CLM-199): The following 9 items are marked for deletion.  Are you sure?
-\a nrSetWindowVisibility(mcMBXDLG "show")
-\a nrSetCurrentWindow(mcMBXDLG)
-\a nrResizeWindow(mcMBXDLG list(519 278 268 91))
-\a mcMBXDLG->pushButton1->value = t
-\o Deleting 9 cells from library "8_Bit_CSL_Adder".
-\o Deleting cell "DFF_datapath".
-\a nrSetCurrentWindow(deleteForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\o Deleted cell '8_Bit_CSL_Adder/DFF_datapath'.
-\o Deleting cell "D_flip_flop_D_flip_flop".
-\a nrSetCurrentWindow(workingDialogForm)
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a nrResizeWindow(workingDialogForm list(550 297 268 133))
-\o Deleted cell '8_Bit_CSL_Adder/D_flip_flop_D_flip_flop'.
-\o Deleting cell "XOR".
-\o Deleted cell '8_Bit_CSL_Adder/XOR'.
-\o Deleting cell "dff_sim".
-\o Batching session updates...
-\o Deleted cell '8_Bit_CSL_Adder/dff_sim'.
-\o Deleting cell "inverter".
-\o Deleted cell '8_Bit_CSL_Adder/inverter'.
-\o Deleting cell "nand".
-\o Deleted cell '8_Bit_CSL_Adder/nand'.
-\o Deleting cell "transmission_gate".
-\o Deleted cell '8_Bit_CSL_Adder/transmission_gate'.
-\o Deleting cell "tristate_inverter".
-\o Deleted cell '8_Bit_CSL_Adder/tristate_inverter'.
-\o Deleting cell "tristate_nand".
-\o Deleted cell '8_Bit_CSL_Adder/tristate_nand'.
-\o Deletion of 9 cells done.
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
 \a cdsLibManager->cellListBox->value = "D_flip_flop"
 \a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 32 24 2 "D_flip_flop")
-\a cdsLibManager->copySimpleButton->value = t
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->CopyFromLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->CopyFromLibrary->value = "D_flip_flop"
-\a copyCellForm->CopyFromCell->value = "D_flip_flop"
-\a copyCellForm->CopyToLibrary->value = "D_flip_flop"
-\a copyCellForm->CopyToCell->value = "D_flip_flop"
-\a copyCellForm->ViewsToCopy->value = "layout schematic symbol"
-\a copyCellForm->SkipLibrariesEdit->value = ""
-\a copyCellForm->SkipLibrariesEdit->value = "8_Bit_CSL_Adder D_FLIPFLOP NCSU_Devices_FreePDK45 NCSU_TechLib_FreePDK45 US_8ths analogLib basic cdsDefTechLib freepdk_cells inverter test"
-\a nrSetWindowVisibility(copyCellForm "show")
-\a nrSetCurrentWindow(copyCellForm)
-\a nrResizeWindow(copyCellForm list(434 34 488 659))
-\a copyCellForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->OK->value = t
-\o Beginning simple copy to library "8_Bit_CSL_Adder".
-\o Processing files to be copied...
-\a nrResizeWindow(workingDialogForm list(544 297 273 133))
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a copyProblemsDialog->fixErrors->value = t
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(copyCellForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(542 297 273 133))
-\o Copy succeeded.
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "D_flip_flop"
-\a cdsLibManager->libLineEdit->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 53 27 2 "D_flip_flop")
-\a cdsLibManager->copySimpleButton->value = t
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a copyCellForm->ViewsToCopy->value = ""
-\a copyCellForm->CopyFromCell->value = ""
-\a copyCellForm->CopyToCell->value = ""
-\a copyCellForm->CopyFromLibrary->value = ""
-\a copyCellForm->CopyToLibrary->value = ""
-\a copyCellForm->CopyFromLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->CopyFromLibrary->value = "D_flip_flop"
-\a copyCellForm->CopyFromCell->value = "D_flip_flop"
-\a copyCellForm->CopyToLibrary->value = "D_flip_flop"
-\a copyCellForm->CopyToCell->value = "D_flip_flop"
-\a copyCellForm->ViewsToCopy->value = "layout schematic symbol"
-\a copyCellForm->SkipLibrariesEdit->value = ""
-\a copyCellForm->SkipLibrariesEdit->value = "8_Bit_CSL_Adder D_FLIPFLOP NCSU_Devices_FreePDK45 NCSU_TechLib_FreePDK45 US_8ths analogLib basic cdsDefTechLib freepdk_cells inverter test"
-\a nrSetCurrentWindow(copyCellForm)
-\a copyCellForm->CopyToLibrary->value = "8_Bit_CSL_Adder"
-\a copyCellForm->OK->value = t
-\o Beginning simple copy to library "8_Bit_CSL_Adder".
-\o Processing files to be copied...
-\a nrResizeWindow(workingDialogForm list(550 297 273 133))
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a copyProblemsDialog->overwriteAll->value = t
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(copyCellForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(542 297 273 133))
-\o Copy succeeded.
-\a copyCellForm->SkipLibrariesEdit->value = "*"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->libLineEdit->value = "8_Bit_CSL_Adder"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellListBox->value = "D_flip_flop"
-\a cdsLibManager->cellLineEdit->value = "D_flip_flop"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->fileExitButton->value = t
 \o libManager is exiting.
 \a exit(0)

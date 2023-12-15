@@ -1,6 +1,6 @@
-mgc_rve_context_lcv "D_flip_flop" "D_flip_flop" "layout" 2000
-mgc_rve_highlight_index 0 "M16" "#00000000FFFF"
-mgc_rve_property "w" 1.8e-07  "l" 5e-08  "as" 2.16e-14  "ad" 2.16e-14  "ps" 6e-07  "pd" 6e-07  "model" "PMOS_VTL"
-mgc_rve_layer "pgate"
-mr 2.02 0.94 2.07 1.12
-mgc_rve_zoom 2.0095 0.9015 2.0805 1.1585 1
+mgc_rve_context_lcv "8_Bit_CSL_Adder" "1_bit_mirror_full_adder" "layout" 2000
+mgc_rve_highlight_index 0 "M3" "#8080FFFF8080"
+mgc_rve_property "w" 1.15e-07  "l" 5e-08  "as" 1.61e-14  "ad" 1.61e-14  "ps" 5.1e-07  "pd" 5.1e-07  "model" "NMOS_VTL"
+mgc_rve_layer "ngate"
+mr 40725.285 16847.295 40725.335 16847.41
+mgc_rve_zoom 40725.2745 16847.2705 40725.3455 16847.4345 1
