@@ -1,6 +1,7 @@
 CADENCE IHNL11140
 $model
-8_Bit_CSL_Adder/1_bit_mirror_full_adder/schematic 1_bit_mirror_full_adder
+8_Bit_CSL_Adder/2_to_1_mux/schematic 2_to_1_mux
+D_flip_flop/inverter/schematic inverter
 $endmodel
 $net
 $endnet

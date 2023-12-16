@@ -1,0 +1,43 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  8_Bit_CSL_Adder
+* Top Cell Name: 2_to_1_mux
+* View Name:     schematic
+* Netlisted on:  Dec 15 22:31:30 2023
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter GND VDD VIN VOUT
+*.PININFO VIN:I VOUT:O GND:B VDD:B
+MM0 VOUT VIN VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM1 VOUT VIN GND GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: 8_Bit_CSL_Adder
+* Cell Name:    2_to_1_mux
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 2_to_1_mux A B GND Sel VDD mux_out
+*.PININFO A:I B:I Sel:I mux_out:O GND:B VDD:B
+MM1 B ~Sel mux_out VDD PMOS_VTL W=160.0n L=50n m=1
+MM0 A Sel mux_out VDD PMOS_VTL W=160.0n L=50n m=1
+MM3 B Sel mux_out GND NMOS_VTL W=100n L=50n m=1
+MM2 A ~Sel mux_out GND NMOS_VTL W=100n L=50n m=1
+XI0 GND VDD Sel ~Sel / inverter
+.ENDS
+

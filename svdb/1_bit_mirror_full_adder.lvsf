@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT 1_bit_mirror_full_adder.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/home5/msudhanan/ese555workingdir/1_bit_mirror_full_adder.src.net
 lvs_LvsOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibreLVS.rul_
-lvs_LvsRunTimes 1702622297 1702622297
+lvs_LvsRunTimes 1702697173 1702697173

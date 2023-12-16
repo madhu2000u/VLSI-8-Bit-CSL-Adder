@@ -1,19 +1,19 @@
 *lvsRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreLVS.rul
 *lvsRunDir: /home/home5/msudhanan/ese555workingdir
-*lvsLayoutPaths: 1_bit_mirror_full_adder.calibre.db
-*lvsLayoutPrimary: 1_bit_mirror_full_adder
+*lvsLayoutPaths: 2_to_1_mux.calibre.db
+*lvsLayoutPrimary: 2_to_1_mux
 *lvsLayoutLibrary: 8_Bit_CSL_Adder
 *lvsLayoutView: layout
 *lvsLayoutGetFromViewer: 1
-*lvsSourcePath: 1_bit_mirror_full_adder.src.net
-*lvsSourcePrimary: 1_bit_mirror_full_adder
+*lvsSourcePath: 2_to_1_mux.src.net
+*lvsSourcePrimary: 2_to_1_mux
 *lvsSourceLibrary: 8_Bit_CSL_Adder
 *lvsSourceView: schematic
 *lvsSourceGetFromViewer: 1
-*lvsSpiceFile: 1_bit_mirror_full_adder.sp
-*lvsERCDatabase: 1_bit_mirror_full_adder.erc.results
-*lvsERCSummaryFile: 1_bit_mirror_full_adder.erc.summary
-*lvsReportFile: 1_bit_mirror_full_adder.lvs.report
+*lvsSpiceFile: 2_to_1_mux.sp
+*lvsERCDatabase: 2_to_1_mux.erc.results
+*lvsERCSummaryFile: 2_to_1_mux.erc.summary
+*lvsReportFile: 2_to_1_mux.lvs.report
 *cmnWarnLayoutOverwrite: 0
 *cmnWarnSourceOverwrite: 0
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
@@ -21,4 +21,4 @@
 *cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *cmnFDILayoutLibrary: 8_Bit_CSL_Adder
 *cmnFDILayoutView: layout
-*cmnFDIDEFLayoutPath: 1_bit_mirror_full_adder.def
+*cmnFDIDEFLayoutPath: 2_to_1_mux.def

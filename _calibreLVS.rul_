@@ -1,22 +1,22 @@
 //
-//  Rule file generated on Fri Dec 15 01:38:15 EST 2023
+//  Rule file generated on Fri Dec 15 22:31:30 EST 2023
 //     by Calibre Interactive - LVS (v2014.4_28.20)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "1_bit_mirror_full_adder.calibre.db"
-LAYOUT PRIMARY "1_bit_mirror_full_adder"
+LAYOUT PATH  "2_to_1_mux.calibre.db"
+LAYOUT PRIMARY "2_to_1_mux"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/home/home5/msudhanan/ese555workingdir/1_bit_mirror_full_adder.src.net"
-SOURCE PRIMARY "1_bit_mirror_full_adder"
+SOURCE PATH "/home/home5/msudhanan/ese555workingdir/2_to_1_mux.src.net"
+SOURCE PRIMARY "2_to_1_mux"
 SOURCE SYSTEM SPICE
 
 MASK SVDB DIRECTORY "svdb" QUERY
 
-LVS REPORT "1_bit_mirror_full_adder.lvs.report"
+LVS REPORT "2_to_1_mux.lvs.report"
 
 LVS REPORT OPTION NONE
 LVS FILTER UNUSED OPTION NONE SOURCE
@@ -39,8 +39,8 @@ VIRTUAL CONNECT COLON NO
 VIRTUAL CONNECT REPORT NO
 
 LVS EXECUTE ERC YES
-ERC RESULTS DATABASE "1_bit_mirror_full_adder.erc.results"
-ERC SUMMARY REPORT "1_bit_mirror_full_adder.erc.summary" REPLACE HIER
+ERC RESULTS DATABASE "2_to_1_mux.erc.results"
+ERC SUMMARY REPORT "2_to_1_mux.erc.summary" REPLACE HIER
 ERC CELL NAME YES CELL SPACE XFORM
 ERC MAXIMUM RESULTS 1000
 ERC MAXIMUM VERTEX 4096

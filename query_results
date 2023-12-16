@@ -1,6 +1,3 @@
-mgc_rve_context_lcv "8_Bit_CSL_Adder" "1_bit_mirror_full_adder" "layout" 2000
-mgc_rve_highlight_index 0 "M3" "#8080FFFF8080"
-mgc_rve_property "w" 1.15e-07  "l" 5e-08  "as" 1.61e-14  "ad" 1.61e-14  "ps" 5.1e-07  "pd" 5.1e-07  "model" "NMOS_VTL"
-mgc_rve_layer "ngate"
-mr 40725.285 16847.295 40725.335 16847.41
-mgc_rve_zoom 40725.2745 16847.2705 40725.3455 16847.4345 1
+mgc_rve_context_lcv "8_Bit_CSL_Adder" "8_Bit_CSL_Adder" "layout" 2000
+mp 4 7.2 -8.915 7.27 -8.915 7.27 -8.845 7.2 -8.845
+mgc_rve_zoom 7.185 -8.93 7.285 -8.83 1

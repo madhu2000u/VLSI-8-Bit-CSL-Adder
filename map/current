@@ -1,14 +1,16 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "1_bit_mirror_full_adder"
+  blockName "2_to_1_mux"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
   netlistDir "/home/home5/msudhanan/ese555workingdir"
  )
 ( model
-( "8_Bit_CSL_Adder/1_bit_mirror_full_adder/schematic" "1_bit_mirror_full_adder" )
+( "8_Bit_CSL_Adder/2_to_1_mux/schematic" "2_to_1_mux" )
+( "D_flip_flop/inverter/schematic" "inverter" )
  )
-( "1_bit_mirror_full_adder" "ihnl/cds0/map" )
+( "2_to_1_mux" "ihnl/cds1/map" )
+( "inverter" "ihnl/cds0/map" )
  )
