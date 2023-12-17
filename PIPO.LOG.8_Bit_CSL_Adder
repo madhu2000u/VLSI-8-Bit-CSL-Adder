@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 06/22/2022 16:16 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 16-Dec-2023  03:12:17
+Started at: 17-Dec-2023  03:10:07
 User Name : msudhanan
 Host Name : lab38.ece.stonybrook.edu
 Directory : /home/home5/msudhanan/ese555workingdir
@@ -25,13 +25,14 @@ case                                    Preserve
 convertDot                              node
 
 INFO (XSTRM-223): 1. Translating cellView 8_Bit_CSL_Adder/8_Bit_CSL_Adder/layout as STRUCTURE 8_Bit_CSL_Adder.
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
 
 Summary of Objects Translated:
 	Scalar Instances:                       0
 	Array Instances:                        0
-	Polygons:                               8
+	Polygons:                               50
 	Paths:                                  0
-	Rectangles:                             2054
+	Rectangles:                             15770
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -51,5 +52,5 @@ Summary of Objects Translated:
 	TextDisplay:                            0
 	Cells:                                  1
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2704KB
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2960KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
