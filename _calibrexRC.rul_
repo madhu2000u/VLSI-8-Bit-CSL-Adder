@@ -1,24 +1,24 @@
 //
-//  Rule file generated on Sat Nov 18 19:06:58 EST 2023
+//  Rule file generated on Sun Dec 17 18:12:53 EST 2023
 //     by Calibre Interactive - PEX (v2014.4_28.20)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "D_flip_flop.calibre.db"
-LAYOUT PRIMARY "D_flip_flop"
+LAYOUT PATH  "Eight_Bit_CSL_Adder.calibre.db"
+LAYOUT PRIMARY "Eight_Bit_CSL_Adder"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/home/home5/msudhanan/ese555workingdir/D_flip_flop.src.net"
-SOURCE PRIMARY "D_flip_flop"
+SOURCE PATH "/home/home5/msudhanan/ese555workingdir/Eight_Bit_CSL_Adder.src.net"
+SOURCE PRIMARY "Eight_Bit_CSL_Adder"
 SOURCE SYSTEM SPICE
 
 MASK SVDB DIRECTORY "svdb" QUERY XRC
 
-LVS REPORT "D_flip_flop.lvs.report"
+LVS REPORT "Eight_Bit_CSL_Adder.lvs.report"
 
-PEX NETLIST "D_flip_flop.pex.netlist" HSPICE 1 SOURCENAMES 
+PEX NETLIST "Eight_Bit_CSL_Adder.pex.netlist" HSPICE 1 SOURCENAMES 
 PEX REDUCE ANALOG NO
 PEX NETLIST UPPERCASE KEYWORDS NO
 PEX NETLIST VIRTUAL CONNECT NO

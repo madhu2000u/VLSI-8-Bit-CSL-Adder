@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Eight_Bit_CSL_Adder.dv
+dv_start matched                                  
+dv_cell {Eight_Bit_CSL_Adder} {Eight_Bit_CSL_Adder} matched
+dv_obj_count -transformed_nets {338 338} -transformed_inst {845 845} -transformed_port {29 29}
+dv_end

@@ -1,24 +1,24 @@
 *lvsRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreLVS.rul
 *lvsRunDir: /home/home5/msudhanan/ese555workingdir
-*lvsLayoutPaths: 8_Bit_CSL_Adder.calibre.db
-*lvsLayoutPrimary: 8_Bit_CSL_Adder
-*lvsLayoutLibrary: 8_Bit_CSL_Adder
+*lvsLayoutPaths: Eight_Bit_CSL_Adder.calibre.db
+*lvsLayoutPrimary: Eight_Bit_CSL_Adder
+*lvsLayoutLibrary: Eight_Bit_CSL_Adder
 *lvsLayoutView: layout
 *lvsLayoutGetFromViewer: 1
-*lvsSourcePath: 8_Bit_CSL_Adder.src.net
-*lvsSourcePrimary: 8_Bit_CSL_Adder
-*lvsSourceLibrary: 8_Bit_CSL_Adder
+*lvsSourcePath: Eight_Bit_CSL_Adder.src.net
+*lvsSourcePrimary: Eight_Bit_CSL_Adder
+*lvsSourceLibrary: Eight_Bit_CSL_Adder
 *lvsSourceView: schematic
 *lvsSourceGetFromViewer: 1
-*lvsSpiceFile: 8_Bit_CSL_Adder.sp
-*lvsERCDatabase: 8_Bit_CSL_Adder.erc.results
-*lvsERCSummaryFile: 8_Bit_CSL_Adder.erc.summary
-*lvsReportFile: 8_Bit_CSL_Adder.lvs.report
+*lvsSpiceFile: Eight_Bit_CSL_Adder.sp
+*lvsERCDatabase: Eight_Bit_CSL_Adder.erc.results
+*lvsERCSummaryFile: Eight_Bit_CSL_Adder.erc.summary
+*lvsReportFile: Eight_Bit_CSL_Adder.lvs.report
 *cmnWarnLayoutOverwrite: 0
 *cmnWarnSourceOverwrite: 0
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
 *cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
-*cmnFDILayoutLibrary: 8_Bit_CSL_Adder
+*cmnFDILayoutLibrary: Eight_Bit_CSL_Adder
 *cmnFDILayoutView: layout
-*cmnFDIDEFLayoutPath: 8_Bit_CSL_Adder.def
+*cmnFDIDEFLayoutPath: Eight_Bit_CSL_Adder.def

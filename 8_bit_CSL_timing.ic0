@@ -1,0 +1,44 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09-SP2 linux64"
+* "format" "HSP"
+* "rundate" "18:34:25 12/17/2023 "
+* "netlist" "8_bit_CSL_timing.sp "
+* "runtitle" "t****************************************************"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a0 =   0.            
++ a1 =   0.            
++ a2 =   0.            
++ a3 =   0.            
++ a4 =   0.            
++ a5 =   1.1000        
++ a6 =   0.            
++ a7 =   0.            
++ b0 =   0.            
++ b1 =   0.            
++ b2 =   0.            
++ b3 =   0.            
++ b4 =   0.            
++ b5 =   0.            
++ b6 =   0.            
++ b7 =   0.            
++ c0 =   0.            
++ c1 =   1.1000        
++ cin =   0.            
++ clk =   0.            
++ cout = 235.9312p       
++ rst =   0.            
++ s0 =   1.4449u       
++ s1 = 245.8442p       
++ s2 = 235.2560p       
++ s3 = 245.1023p       
++ s4 = 243.0497p       
++ s5 =   1.4139u       
++ s6 = 228.2560p       
++ s7 = 230.9034p       
++ vdd6 =   1.1000        
+***   END: Saved Operating Point ***                     

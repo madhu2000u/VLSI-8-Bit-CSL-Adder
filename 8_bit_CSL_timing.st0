@@ -1,0 +1,56 @@
+****** PrimeSim HSPICE -- S-2021.09-SP2 linux64 (Feb 24 2022 7505118) ******
+Input File: 8_bit_CSL_timing.sp
+lic:
+lic: FLEXlm: SDK_12.9.8
+lic: USER:   msudhanan            HOSTNAME: lab38.ece.stonybrook.edu
+lic: HOSTID: 31812645             PID:      3498
+lic: Using FLEXlm license file:
+lic: 4999@license0.ece.stonybrook.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 11-nov-2024/2022.06
+lic: 3(in_use)/50(total) FLOATING license(s) on SERVER 4999@license0.ece.stonybrook.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 2.72E-01
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/ad
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/behave
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/bjt
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/burr_brn
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/comlinear
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/dio
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/fet
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/lin_tech
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/pci
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/signet
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/ti
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/tline
+       option search = /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/parts/xilinx
+       option macmod =     1.00
+       option captab
+       option post
+ init: end read circuit files, cpu clock= 3.88E-01 peak memory=     567 mb
+ init: begin check errors, cpu clock= 3.88E-01
+ init: end check errors, cpu clock= 4.82E-01 peak memory=     567 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 4.82E-01
+       establish matrix -- done, cpu clock= 4.88E-01 peak memory=     567 mb
+       re-order matrix -- done, cpu clock= 6.94E-01 peak memory=     603 mb
+ init: end setup matrix, cpu clock= 7.33E-01 peak memory=     603 mb
+ dcop: begin dcop, cpu clock= 7.40E-01
+       establish matrix -- done, cpu clock= 8.13E-01 peak memory=     603 mb
+       re-order matrix -- done, cpu clock= 1.00E+00 peak memory=     612 mb
+ dcop: end dcop, cpu clock= 1.02E+00 peak memory=     612 mb tot_iter=      24
+ output: 8_bit_CSL_timing.mt0
+ sweep: tran tran0    begin, stop_t=  5.00E-08 #sweeps=5001 cpu clock= 1.02E+00
+ tran: time= 5.0000E-09 tot_iter=    3566 conv_iter=    1032 cpu clock= 1.10E+01
+ tran: time= 1.0000E-08 tot_iter=    7287 conv_iter=    2118 cpu clock= 2.14E+01
+ tran: time= 1.5000E-08 tot_iter=   11005 conv_iter=    3207 cpu clock= 3.18E+01
+ tran: time= 2.0004E-08 tot_iter=   14692 conv_iter=    4285 cpu clock= 4.21E+01
+ tran: time= 2.5002E-08 tot_iter=   18429 conv_iter=    5378 cpu clock= 5.26E+01
+ tran: time= 3.0003E-08 tot_iter=   22126 conv_iter=    6455 cpu clock= 6.29E+01
+ tran: time= 3.5004E-08 tot_iter=   25815 conv_iter=    7530 cpu clock= 7.33E+01
+ tran: time= 4.0003E-08 tot_iter=   29550 conv_iter=    8621 cpu clock= 8.37E+01
+ tran: time= 4.5005E-08 tot_iter=   33271 conv_iter=    9710 cpu clock= 9.41E+01
+ tran: time= 5.0000E-08 tot_iter=   36998 conv_iter=   10797 cpu clock= 1.05E+02
+ sweep: tran tran0    end, cpu clock= 1.05E+02 peak memory=     612 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

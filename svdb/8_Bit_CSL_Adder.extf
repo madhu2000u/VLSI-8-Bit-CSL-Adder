@@ -1,9 +1,10 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1702835290 1702835290
+lvs_ExtRunTimes 1702852849 1702852850
 lvs_ExtOutFile RUNDIR /home/home5/msudhanan/ese555workingdir
-lvs_ExtOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibreLVS.rul_
-lvs_ExtInfoExtSummary {0 0 0 2 0 0 0 2 0 0 0}
+lvs_ExtOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/home5/msudhanan/ese555workingdir/8_Bit_CSL_Adder.sp
+lvs_ExtOutFile LAYOUT_NETLIST /home/home5/msudhanan/ese555workingdir/svdb/8_Bit_CSL_Adder.sp
 lvs_ExtOutFile EXTRACTION_REPORT 8_Bit_CSL_Adder.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP {  svdb/8_Bit_CSL_Adder.pdsp }

@@ -1,0 +1,235 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Eight_Bit_CSL_Adder
+* Top Cell Name: Eight_Bit_CSL_Adder
+* View Name:     schematic
+* Netlisted on:  Dec 17 18:13:01 2023
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter GND VDD VIN VOUT
+*.PININFO VIN:I VOUT:O GND:B VDD:B
+MM0 VOUT VIN VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM1 VOUT VIN GND GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: Eight_Bit_CSL_Adder
+* Cell Name:    2_to_1_mux
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 2_to_1_mux A B GND Sel VDD mux_out
+*.PININFO A:I B:I Sel:I mux_out:O GND:B VDD:B
+MM1 B ~Sel mux_out VDD PMOS_VTL W=160.0n L=50n m=1
+MM0 A Sel mux_out VDD PMOS_VTL W=160.0n L=50n m=1
+MM3 B Sel mux_out GND NMOS_VTL W=100n L=50n m=1
+MM2 A ~Sel mux_out GND NMOS_VTL W=100n L=50n m=1
+XI0 GND VDD Sel ~Sel / inverter
+.ENDS
+
+************************************************************************
+* Library Name: Eight_Bit_CSL_Adder
+* Cell Name:    1_bit_mirror_full_adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 1_bit_mirror_full_adder A B Cin GND VDD ~Cout ~S
+*.PININFO A:I B:I Cin:I ~Cout:O ~S:O GND:B VDD:B
+MM22 net20 B VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM20 net18 B VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM14 ~S Cin net21 VDD PMOS_VTL W=160.0n L=50n m=1
+MM13 ~S ~Cout net18 VDD PMOS_VTL W=140.0n L=50n m=1
+MM12 net21 A net20 VDD PMOS_VTL W=160.0n L=50n m=1
+MM11 net18 Cin VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM10 net18 A VDD VDD PMOS_VTL W=160.0n L=50n m=1
+MM4 ~Cout A net7 VDD PMOS_VTL W=180.0n L=50n m=1
+MM3 ~Cout Cin net4 VDD PMOS_VTL W=180.0n L=50n m=1
+MM2 net7 B VDD VDD PMOS_VTL W=180.0n L=50n m=1
+MM1 net4 B VDD VDD PMOS_VTL W=180.0n L=50n m=1
+MM0 net4 A VDD VDD PMOS_VTL W=180.0n L=50n m=1
+MM23 net24 B GND GND NMOS_VTL W=100n L=50n m=1
+MM21 net22 B GND GND NMOS_VTL W=100n L=50n m=1
+MM19 net22 A GND GND NMOS_VTL W=100n L=50n m=1
+MM18 net22 Cin GND GND NMOS_VTL W=100n L=50n m=1
+MM17 net23 A net24 GND NMOS_VTL W=100n L=50n m=1
+MM16 ~S Cin net23 GND NMOS_VTL W=100n L=50n m=1
+MM15 ~S ~Cout net22 GND NMOS_VTL W=90n L=50n m=1
+MM9 net8 A GND GND NMOS_VTL W=115.00n L=50n m=1
+MM8 net8 B GND GND NMOS_VTL W=115.00n L=50n m=1
+MM7 net9 B GND GND NMOS_VTL W=115.00n L=50n m=1
+MM6 ~Cout A net9 GND NMOS_VTL W=115.00n L=50n m=1
+MM5 ~Cout Cin net8 GND NMOS_VTL W=115.00n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    transmission_gate
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT transmission_gate CLK GND VDD tg_IN tg_OUT ~CLK
+*.PININFO CLK:I tg_IN:I ~CLK:I GND:B VDD:B tg_OUT:B
+Mtg1_pmos tg_OUT CLK tg_IN VDD PMOS_VTL W=160.0n L=50n m=1
+MM0 tg_OUT ~CLK tg_IN GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    nand
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand GND NAND_A NAND_B NAND_VOUT VDD
+*.PININFO NAND_A:I NAND_B:I NAND_VOUT:O GND:B VDD:B
+Mnand_nmos_2 net1 NAND_B GND GND NMOS_VTL W=100n L=50n m=1
+Mnand_nmos_1 NAND_VOUT NAND_A net1 GND NMOS_VTL W=100n L=50n m=1
+Mnand_pmos_2 NAND_VOUT NAND_A VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mnand_pmos_1 NAND_VOUT NAND_B VDD VDD PMOS_VTL W=160.0n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    tristate_inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristate_inverter CLK GND VDD VIN VOUT ~CLK
+*.PININFO CLK:I VIN:I ~CLK:I VOUT:O GND:B VDD:B
+Mt_i_pmos_state_ctrl net1 ~CLK VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_i_pmos VOUT VIN net1 VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_i_nmos_state_ctrl net2 CLK GND GND NMOS_VTL W=100n L=50n m=1
+Mt_i_nmos VOUT VIN net2 GND NMOS_VTL W=100n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    tristate_nand
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT tristate_nand CLK GND VDD t_NAND_A t_NAND_B t_NAND_VOUT ~CLK
+*.PININFO CLK:I t_NAND_A:I t_NAND_B:I ~CLK:I t_NAND_VOUT:O GND:B VDD:B
+Mt_nand_nmos_state_ctrl net2 ~CLK GND GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_nmos_2 net1 t_NAND_B net2 GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_nmos_1 t_NAND_VOUT t_NAND_A net1 GND NMOS_VTL W=100n L=50n m=1
+Mt_nand_pmos_state_ctrl net3 CLK VDD VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_nand_pmos_2 t_NAND_VOUT t_NAND_A net3 VDD PMOS_VTL W=160.0n L=50n m=1
+Mt_nand_pmos_1 t_NAND_VOUT t_NAND_B net3 VDD PMOS_VTL W=160.0n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: D_flip_flop
+* Cell Name:    D_flip_flop
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT D_flip_flop CLK_MAIN D GND Q RESET VDD
+*.PININFO D:I Q:O CLK_MAIN:B GND:B RESET:B VDD:B
+Xtg1 CLK GND VDD net2 net1 ~CLK / transmission_gate
+Xtg2 ~CLK GND VDD net6 net5 CLK / transmission_gate
+Xnand GND ~RESET net1 net6 VDD / nand
+Xt_i1 CLK GND VDD net6 net1 ~CLK / tristate_inverter
+Xt_n CLK GND VDD net10 ~RESET net5 ~CLK / tristate_nand
+X~reset GND VDD RESET ~RESET / inverter
+X~clk_inv GND VDD ~CLK CLK / inverter
+Xclk_inv GND VDD CLK_MAIN ~CLK / inverter
+Xq_inv GND VDD net5 Q / inverter
+Xinv_loopback GND VDD net5 net10 / inverter
+X~d_inv GND VDD net8 net2 / inverter
+Xd_inv GND VDD D net8 / inverter
+.ENDS
+
+************************************************************************
+* Library Name: Eight_Bit_CSL_Adder
+* Cell Name:    Eight_Bit_CSL_Adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Eight_Bit_CSL_Adder A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 
++ CLK_MAIN Cout GND RESET S0 S1 S2 S3 S4 S5 S6 S7 VDD
+*.PININFO A0:I A1:I A2:I A3:I A4:I A5:I A6:I A7:I B0:I B1:I B2:I B3:I B4:I 
+*.PININFO B5:I B6:I B7:I CLK_MAIN:I RESET:I Cout:O S0:O S1:O S2:O S3:O S4:O 
+*.PININFO S5:O S6:O S7:O GND:B VDD:B
+XI45 C7_c0 C7_c1 GND C3_out VDD C7_out / 2_to_1_mux
+XI44 net21 net41 GND GND VDD C3_out / 2_to_1_mux
+XI41 net36 net51 GND C3_out VDD net80 / 2_to_1_mux
+XI40 net32 net52 GND C3_out VDD net87 / 2_to_1_mux
+XI39 net30 net47 GND C3_out VDD net67 / 2_to_1_mux
+XI38 net26 net53 GND C3_out VDD net64 / 2_to_1_mux
+XI35 net24 net42 GND GND VDD net66 / 2_to_1_mux
+XI34 net11 net12 GND GND VDD net63 / 2_to_1_mux
+XI33 net15 net9 GND GND VDD net62 / 2_to_1_mux
+XI32 net8 net13 GND GND VDD net65 / 2_to_1_mux
+XI78 GND VDD net72 net32 / inverter
+XI77 GND VDD net69 net26 / inverter
+XI76 GND VDD net70 net11 / inverter
+XI75 GND VDD net71 net8 / inverter
+XI47 GND VDD net40 net12 / inverter
+XI46 GND VDD net14 net13 / inverter
+XI48 GND VDD net44 net53 / inverter
+XI49 GND VDD net49 net52 / inverter
+XI23 GND VDD net56 net35 / inverter
+XI22 GND VDD net46 net34 / inverter
+XI21 GND VDD net7 net28 / inverter
+XI20 GND VDD net10 net29 / inverter
+XI19 GND VDD net55 net23 / inverter
+XI18 GND VDD net57 net22 / inverter
+XI17 GND VDD net61 net19 / inverter
+XI16 GND VDD net59 net18 / inverter
+XI15 net1 net2 VDD GND VDD net37 net14 / 1_bit_mirror_full_adder
+XI14 net34 net35 ~C6_c1 GND VDD C7_c1 net51 / 1_bit_mirror_full_adder
+XI13 net5 net6 C5_c1 GND VDD ~C6_c1 net49 / 1_bit_mirror_full_adder
+XI12 net28 net29 ~C4_c1 GND VDD C5_c1 net47 / 1_bit_mirror_full_adder
+XI11 net3 net4 VDD GND VDD ~C4_c1 net44 / 1_bit_mirror_full_adder
+XI10 net22 net23 net39 GND VDD net41 net42 / 1_bit_mirror_full_adder
+XI9 net58 net60 net38 GND VDD net39 net40 / 1_bit_mirror_full_adder
+XI8 net18 net19 net37 GND VDD net38 net9 / 1_bit_mirror_full_adder
+XI7 net34 net35 ~C6_c0 GND VDD C7_c0 net36 / 1_bit_mirror_full_adder
+XI6 net5 net6 C5_c0 GND VDD ~C6_c0 net72 / 1_bit_mirror_full_adder
+XI5 net28 net29 ~C4_c0 GND VDD C5_c0 net30 / 1_bit_mirror_full_adder
+XI4 net3 net4 GND GND VDD ~C4_c0 net69 / 1_bit_mirror_full_adder
+XI3 net22 net23 net20 GND VDD net21 net24 / 1_bit_mirror_full_adder
+XI2 net58 net60 net17 GND VDD net20 net70 / 1_bit_mirror_full_adder
+XI1 net18 net19 net16 GND VDD net17 net15 / 1_bit_mirror_full_adder
+XI0 net1 net2 GND GND VDD net16 net71 / 1_bit_mirror_full_adder
+XI74 CLK_MAIN C7_out GND Cout RESET VDD / D_flip_flop
+XI73 CLK_MAIN net80 GND S7 RESET VDD / D_flip_flop
+XI72 CLK_MAIN net87 GND S6 RESET VDD / D_flip_flop
+XI65 CLK_MAIN B6 GND net6 RESET VDD / D_flip_flop
+XI64 CLK_MAIN A6 GND net5 RESET VDD / D_flip_flop
+XI63 CLK_MAIN B7 GND net56 RESET VDD / D_flip_flop
+XI62 CLK_MAIN A7 GND net46 RESET VDD / D_flip_flop
+XI61 CLK_MAIN A5 GND net7 RESET VDD / D_flip_flop
+XI60 CLK_MAIN B5 GND net10 RESET VDD / D_flip_flop
+XI59 CLK_MAIN A4 GND net3 RESET VDD / D_flip_flop
+XI58 CLK_MAIN B4 GND net4 RESET VDD / D_flip_flop
+XI57 CLK_MAIN B2 GND net60 RESET VDD / D_flip_flop
+XI56 CLK_MAIN A2 GND net58 RESET VDD / D_flip_flop
+XI55 CLK_MAIN B3 GND net55 RESET VDD / D_flip_flop
+XI54 CLK_MAIN A3 GND net57 RESET VDD / D_flip_flop
+XI53 CLK_MAIN B1 GND net61 RESET VDD / D_flip_flop
+XI52 CLK_MAIN A1 GND net59 RESET VDD / D_flip_flop
+XI51 CLK_MAIN B0 GND net2 RESET VDD / D_flip_flop
+XI50 CLK_MAIN A0 GND net1 RESET VDD / D_flip_flop
+XI71 CLK_MAIN net67 GND S5 RESET VDD / D_flip_flop
+XI70 CLK_MAIN net64 GND S4 RESET VDD / D_flip_flop
+XI68 CLK_MAIN net63 GND S2 RESET VDD / D_flip_flop
+XI69 CLK_MAIN net66 GND S3 RESET VDD / D_flip_flop
+XI66 CLK_MAIN net65 GND S0 RESET VDD / D_flip_flop
+XI67 CLK_MAIN net62 GND S1 RESET VDD / D_flip_flop
+.ENDS
+

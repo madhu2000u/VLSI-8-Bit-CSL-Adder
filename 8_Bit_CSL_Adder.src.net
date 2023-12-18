@@ -4,7 +4,7 @@
 * Library Name:  8_Bit_CSL_Adder
 * Top Cell Name: 8_Bit_CSL_Adder
 * View Name:     schematic
-* Netlisted on:  Dec 17 12:48:09 2023
+* Netlisted on:  Dec 17 17:40:47 2023
 ************************************************************************
 
 *.EQUATION
@@ -160,10 +160,10 @@ XI0 GND VDD Sel ~Sel / inverter
 ************************************************************************
 
 .SUBCKT 8_Bit_CSL_Adder A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 
-+ CLK_MAIN Cin Cout GND RESET S0 S1 S2 S3 S4 S5 S6 S7 VDD
++ CLK_MAIN Cout GND RESET S0 S1 S2 S3 S4 S5 S6 S7 VDD
 *.PININFO A0:I A1:I A2:I A3:I A4:I A5:I A6:I A7:I B0:I B1:I B2:I B3:I B4:I 
-*.PININFO B5:I B6:I B7:I CLK_MAIN:I Cin:I RESET:I Cout:O S0:O S1:O S2:O S3:O 
-*.PININFO S4:O S5:O S6:O S7:O GND:B VDD:B
+*.PININFO B5:I B6:I B7:I CLK_MAIN:I RESET:I Cout:O S0:O S1:O S2:O S3:O S4:O 
+*.PININFO S5:O S6:O S7:O GND:B VDD:B
 XI15 net1 net2 VDD GND VDD net37 net14 / 1_bit_mirror_full_adder
 XI14 net34 net35 ~C6_c1 GND VDD C7_c1 net51 / 1_bit_mirror_full_adder
 XI13 net5 net6 C5_c1 GND VDD ~C6_c1 net49 / 1_bit_mirror_full_adder
@@ -222,14 +222,14 @@ XI69 CLK_MAIN net66 GND S3 RESET VDD / D_flip_flop
 XI66 CLK_MAIN net65 GND S0 RESET VDD / D_flip_flop
 XI67 CLK_MAIN net62 GND S1 RESET VDD / D_flip_flop
 XI45 C7_c0 C7_c1 GND C3_out VDD C7_out / 2_to_1_mux
-XI44 net21 net41 GND Cin VDD C3_out / 2_to_1_mux
+XI44 net21 net41 GND GND VDD C3_out / 2_to_1_mux
 XI41 net36 net51 GND C3_out VDD net80 / 2_to_1_mux
 XI40 net32 net52 GND C3_out VDD net87 / 2_to_1_mux
 XI39 net30 net47 GND C3_out VDD net67 / 2_to_1_mux
 XI38 net26 net53 GND C3_out VDD net64 / 2_to_1_mux
-XI35 net24 net42 GND Cin VDD net66 / 2_to_1_mux
-XI34 net11 net12 GND Cin VDD net63 / 2_to_1_mux
-XI33 net15 net9 GND Cin VDD net62 / 2_to_1_mux
-XI32 net8 net13 GND Cin VDD net65 / 2_to_1_mux
+XI35 net24 net42 GND GND VDD net66 / 2_to_1_mux
+XI34 net11 net12 GND GND VDD net63 / 2_to_1_mux
+XI33 net15 net9 GND GND VDD net62 / 2_to_1_mux
+XI32 net8 net13 GND GND VDD net65 / 2_to_1_mux
 .ENDS
 

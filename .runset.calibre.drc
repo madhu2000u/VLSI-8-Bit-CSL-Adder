@@ -1,12 +1,12 @@
 *drcRulesFile: $PDK_DIR/ncsu_basekit/techfile/calibre/calibreDRC.rul
 *drcRunDir: /home/home5/msudhanan/ese555workingdir
-*drcLayoutPaths: 8_Bit_CSL_Adder.calibre.db
-*drcLayoutPrimary: 8_Bit_CSL_Adder
-*drcLayoutLibrary: 8_Bit_CSL_Adder
+*drcLayoutPaths: Eight_Bit_CSL_Adder.calibre.db
+*drcLayoutPrimary: Eight_Bit_CSL_Adder
+*drcLayoutLibrary: Eight_Bit_CSL_Adder
 *drcLayoutView: layout
 *drcLayoutGetFromViewer: 1
-*drcResultsFile: 8_Bit_CSL_Adder.drc.results
-*drcSummaryFile: 8_Bit_CSL_Adder.drc.summary
+*drcResultsFile: Eight_Bit_CSL_Adder.drc.results
+*drcSummaryFile: Eight_Bit_CSL_Adder.drc.summary
 *drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
 *drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
@@ -14,6 +14,6 @@
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
 *cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
-*cmnFDILayoutLibrary: 8_Bit_CSL_Adder
+*cmnFDILayoutLibrary: Eight_Bit_CSL_Adder
 *cmnFDILayoutView: layout
-*cmnFDIDEFLayoutPath: 8_Bit_CSL_Adder.def
+*cmnFDIDEFLayoutPath: Eight_Bit_CSL_Adder.def

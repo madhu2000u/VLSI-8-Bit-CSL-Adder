@@ -2,8 +2,8 @@
 lvs_LvsOutFile RUNDIR /home/home5/msudhanan/ese555workingdir
 lvs_LvsfVersion 2
 lvs_LvsInputSummary {0 0 0}
-lvs_LvsComparisonSummary {5 1 4 0}
+lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT 8_Bit_CSL_Adder.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/home5/msudhanan/ese555workingdir/8_Bit_CSL_Adder.src.net
-lvs_LvsOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibreLVS.rul_
-lvs_LvsRunTimes 1702835290 1702835291
+lvs_LvsOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_
+lvs_LvsRunTimes 1702852850 1702852850

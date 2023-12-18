@@ -1,0 +1,68 @@
+### Custom WaveView session file (version S-2021.09-SP2 build Feb 24, ) ###
+### saved at 19:02:32 on Sun Dec 17 2023 ###
+wdf 0 "/home/home5/msudhanan/ese555workingdir/8_bit_CSL_timing.tr0" load=used 
+cvt_begin
+  cvt_a2d 0 1 '0|v(a0)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a0) newname='F|.|V|v(a0)' 
+  cvt_a2d 1 1 '0|v(a1)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a1) newname='F|.|V|v(a1)' 
+  cvt_a2d 2 1 '0|v(a2)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a2) newname='F|.|V|v(a2)' 
+  cvt_a2d 3 1 '0|v(a3)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a3) newname='F|.|V|v(a3)' 
+  cvt_a2d 4 1 '0|v(a4)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a4) newname='F|.|V|v(a4)' 
+  cvt_a2d 5 1 '0|v(a5)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a5) newname='F|.|V|v(a5)' 
+  cvt_a2d 6 1 '0|v(a6)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a6) newname='F|.|V|v(a6)' 
+  cvt_a2d 7 1 '0|v(a7)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a7) newname='F|.|V|v(a7)' 
+  cvt_a2d 8 1 '0|v(b0)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b0) newname='F|.|V|v(b0)' 
+  cvt_a2d 9 1 '0|v(b1)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b1) newname='F|.|V|v(b1)' 
+  cvt_a2d 10 1 '0|v(b2)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b2) newname='F|.|V|v(b2)' 
+  cvt_a2d 11 1 '0|v(b3)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b3) newname='F|.|V|v(b3)' 
+  cvt_a2d 12 1 '0|v(b4)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b4) newname='F|.|V|v(b4)' 
+  cvt_a2d 13 1 '0|v(b5)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b5) newname='F|.|V|v(b5)' 
+  cvt_a2d 14 1 '0|v(b6)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b6) newname='F|.|V|v(b6)' 
+  cvt_a2d 15 1 '0|v(b7)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b7) newname='F|.|V|v(b7)' 
+  cvt_a2d 16 1 '0|v(s0)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s0) newname='F|.|V|v(s0)' 
+  cvt_a2d 17 1 '0|v(s1)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s1) newname='F|.|V|v(s1)' 
+  cvt_a2d 18 1 '0|v(s2)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s2) newname='F|.|V|v(s2)' 
+  cvt_a2d 19 1 '0|v(s3)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s3) newname='F|.|V|v(s3)' 
+  cvt_a2d 20 1 '0|v(s4)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s4) newname='F|.|V|v(s4)' 
+  cvt_a2d 21 1 '0|v(s5)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s5) newname='F|.|V|v(s5)' 
+  cvt_a2d 22 1 '0|v(s6)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s6) newname='F|.|V|v(s6)' 
+  cvt_a2d 23 1 '0|v(s7)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s7) newname='F|.|V|v(s7)' 
+  cvt_a2d 24 1 '0|v(cout)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(cout) newname='F|.|V|v(cout)' 
+cvt_end
+scalar list
+waveview_begin 1  stack  offset=0 name_b=116 mntr_b=116 name_width=101 "name=waveview 1" 
+  panel_begin linear pidx=0 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(clk)" attr=0:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin digital pidx=1 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=A radix=dec 
+    line src=derived cvtidx=7 disp=show 
+    line src=derived cvtidx=6 disp=show 
+    line src=derived cvtidx=5 disp=show 
+    line src=derived cvtidx=4 disp=show 
+    line src=derived cvtidx=3 disp=show 
+    line src=derived cvtidx=2 disp=show 
+    line src=derived cvtidx=1 disp=show 
+    line src=derived cvtidx=0 disp=show 
+  panel_end
+  panel_begin digital pidx=2 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=B radix=dec 
+    line src=derived cvtidx=15 disp=show 
+    line src=derived cvtidx=14 disp=show 
+    line src=derived cvtidx=13 disp=show 
+    line src=derived cvtidx=12 disp=show 
+    line src=derived cvtidx=11 disp=show 
+    line src=derived cvtidx=10 disp=show 
+    line src=derived cvtidx=9 disp=show 
+    line src=derived cvtidx=8 disp=show 
+  panel_end
+  panel_begin digital pidx=3 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=Sum radix=dec 
+    line src=derived cvtidx=24 disp=show 
+    line src=derived cvtidx=23 disp=show 
+    line src=derived cvtidx=22 disp=show 
+    line src=derived cvtidx=21 disp=show 
+    line src=derived cvtidx=20 disp=show 
+    line src=derived cvtidx=19 disp=show 
+    line src=derived cvtidx=18 disp=show 
+    line src=derived cvtidx=17 disp=show 
+    line src=derived cvtidx=16 disp=show 
+  panel_end
+waveview_end
+browserOpened
