@@ -14,6 +14,8 @@
 *pexPexNetlistFile: Eight_Bit_CSL_Adder.pex.netlist
 *pexPexNetlistFormat: HSPICE
 *pexPexReportFile: Eight_Bit_CSL_Adder.pex.report
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
 *cmnUseCBforRVE: 0
 *cmnRunHier: 2
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}

@@ -1,30 +1,16 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "Eight_Bit_CSL_Adder"
+  blockName "2_to_1_mux"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
   netlistDir "/home/home5/msudhanan/ese555workingdir"
  )
 ( model
-( "Eight_Bit_CSL_Adder/Eight_Bit_CSL_Adder/schematic" "Eight_Bit_CSL_Adder" )
-( "D_flip_flop/tristate_inverter/schematic" "tristate_inverter" )
-( "D_flip_flop/transmission_gate/schematic" "transmission_gate" )
-( "Eight_Bit_CSL_Adder/1_bit_mirror_full_adder/schematic" "1_bit_mirror_full_adder" )
-( "D_flip_flop/nand/schematic" "nand" )
+( "Eight_Bit_CSL_Adder/inverter/schematic" "inverter" )
 ( "Eight_Bit_CSL_Adder/2_to_1_mux/schematic" "2_to_1_mux" )
-( "D_flip_flop/D_flip_flop/schematic" "D_flip_flop" )
-( "D_flip_flop/inverter/schematic" "inverter" )
-( "D_flip_flop/tristate_nand/schematic" "tristate_nand" )
  )
-( "tristate_nand" "ihnl/cds6/map" )
-( "1_bit_mirror_full_adder" "ihnl/cds2/map" )
 ( "2_to_1_mux" "ihnl/cds1/map" )
-( "Eight_Bit_CSL_Adder" "ihnl/cds8/map" )
-( "tristate_inverter" "ihnl/cds5/map" )
-( "D_flip_flop" "ihnl/cds7/map" )
 ( "inverter" "ihnl/cds0/map" )
-( "transmission_gate" "ihnl/cds3/map" )
-( "nand" "ihnl/cds4/map" )
  )

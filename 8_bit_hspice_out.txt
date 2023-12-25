@@ -1,0 +1,187 @@
+Using: /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/linux64/hspice 8_bit_CSL_timing.sp
+ ****** PrimeSim HSPICE -- S-2021.09-SP2 linux64 (Feb 24 2022 7505118) ******
+  Copyright (c) 1986 - 2023 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: 8_bit_CSL_timing.sp                                               
+  Command line options: /usr/local/synopsys/hspice/S-2021.09-SP2/hspice/linux64/hspice 8_bit_CSL_timing.sp
+  Start time: Sun Dec 17 20:30:42 2023
+ lic:  
+ lic: FLEXlm: SDK_12.9.8 
+ lic: USER:   msudhanan            HOSTNAME: lab38.ece.stonybrook.edu 
+ lic: HOSTID: 31812645             PID:      12864 
+ lic: Using FLEXlm license file: 
+ lic: 4999@license0.ece.stonybrook.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 11-nov-2024/2022.06 
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER 4999@license0.ece.stonybrook.edu 
+ lic:   
+  **warning** Global net name "gnd" in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** PrimeSim HSPICE -- S-2021.09-SP2 linux64 (Feb 24 2022 7505118) ******
+ ******  
+ t****************************************************
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+  **info** (8_bit_CSL_timing.sp:65) DC voltage reset to initial transient source value in source 0:va0. new dc=0.0000D+00
+  **warning** More warning messages are suppressed. Set option WARNLIMIT to increase the limit.
+             
+ Summary of Linear Res Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-04  ~  1e-03|1         |0.0075    |
+ |1e-03  ~  1e-02|99        |0.7425    |
+ |1e-02  ~  1e-01|1320      |9.8995    |
+ |1e-01  ~  1e+00|4720      |35.3982   |
+ |1e+00  ~  1e+03|7194      |53.9523   |
+ ---------------------------------------
+              
+             
+ Summary of Linear Cap Distribution Info
+ ---------------------------------------
+ |Range          |Total     |Percent(%)|
+ |---------------+----------+----------|
+ |1e-19  ~  1e-18|6912      |22.6334   |
+ |1e-18  ~  1e-17|17857     |58.4728   |
+ |1e-17  ~  1e-16|5471      |17.9148   |
+ |1e-16  ~  1e-15|278       |0.9103    |
+ |1e-15  ~  1e-14|21        |0.0688    |
+ ---------------------------------------
+              
+             
+ Summary of Detailed RC Type Statistics
+ -------------------------
+ |Element Type|Number    |
+ |------------+----------|
+ |Constant Res|13334     |
+ |            |          |
+ |Constant Cap|30539     |
+ -------------------------
+              
+  
+
+  **warning** the following singular supplies were terminated to 1 meg resistor 
+          supply       node1            node2
+(8_bit_CSL_timing.sp:61)vc0                     0:c0               defined in subckt 0                     0:0                defined in subckt 0               
+(8_bit_CSL_timing.sp:62)vc1                     0:c1               defined in subckt 0                     0:0                defined in subckt 0               
+(8_bit_CSL_timing.sp:63)vcin                    0:cin              defined in subckt 0                     0:0                defined in subckt 0               
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 15
+ file=8_bit_CSL_timing.pa0
+
+ ******  
+ t****************************************************
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:a0      =   0.        0:a1      =   0.        0:a2      =   0.     
+ +  0:a3      =   0.        0:a4      =   0.        0:a5      =   1.1000 
+ +  0:a6      =   0.        0:a7      =   0.        0:b0      =   0.     
+ +  0:b1      =   0.        0:b2      =   0.        0:b3      =   0.     
+ +  0:b4      =   0.        0:b5      =   0.        0:b6      =   0.     
+ +  0:b7      =   0.        0:c0      =   0.        0:c1      =   1.1000 
+ +  0:cin     =   0.        0:clk     =   0.        0:cout    = 235.9312p
+ +  0:rst     =   0.        0:s0      =   1.4449u   0:s1      = 245.8442p
+ +  0:s2      = 235.2560p   0:s3      = 245.1023p   0:s4      = 243.0497p
+ +  0:s5      =   1.4139u   0:s6      = 228.2560p   0:s7      = 230.9034p
+ +  0:vdd6    =   1.1000 
+
+
+ maximum nodal capacitance=   1.773E-14         on node     1:n4849          }
+
+    nodal  capacitance table 
+
+      node    =    cap        node    =    cap        node    =    cap
+
+ +  0:a0      = 256.2709a   0:a1      = 221.8200a   0:a2      =   0.     
+ +  0:a3      = 256.2589a   0:a4      =   0.        0:a5      = 256.2589a
+ +  0:a6      =   0.        0:a7      =   0.        0:b0      =   0.     
+ +  0:b1      = 221.8200a   0:b2      =   0.        0:b3      = 256.2589a
+ +  0:b4      = 256.2589a   0:b5      =   0.        0:b6      =   0.     
+ +  0:b7      =   0.        0:c0      =   0.        0:c1      =   0.     
+ +  0:cin     =   0.        0:clk     = 304.8403a   0:cout    =   5.0000f
+ +  0:rst     = 391.9832a   0:s0      =   5.0000f   0:s1      =   5.0000f
+ +  0:s2      =   5.0000f   0:s3      =   5.0000f   0:s4      =   5.0000f
+ +  0:s5      =   5.0000f   0:s6      =   5.0000f   0:s7      =   5.0000f
+ +  0:vdd6    =   0.     
+
+ 
+ ******
+ t****************************************************
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ iavg6=  -1.0057m  from=   0.             to=  50.0000n
+ power6=  -1.1063m
+
+          ***** job concluded
+ ******  
+ t****************************************************
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: 11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+ cpu MHz	: 4697.723
+ CPU(s)		: 16
+  
+ OS:
+ Linux version 3.10.0-1160.66.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Wed May 18 16:02:34 UTC 2022
+
+ System loadavg : 1.83 1.31 1.10 2/900 12972
+
+
+  ******  PrimeSim HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    16
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =   19076 # elements   =   45174
+  # resistors   =   13337 # capacitors =   30539 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =      22
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =    1276 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.29           1          24
+  transient        103.66        5001       37001       10798 rev=       522
+  readin             0.33
+  errchk             0.09
+  setup              0.25
+  output             0.00
+
+
+           peak memory used        603.20 megabytes
+           total cpu time          104.63 seconds
+           total elapsed time      104.67 seconds
+           job started at     20:30:42 12/17/2023
+           job ended   at     20:32:26 12/17/2023
+
+>info:         ***** hspice job concluded
+           job total runtime       104.67 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.04(s)

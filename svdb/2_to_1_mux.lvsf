@@ -6,4 +6,4 @@ lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT 2_to_1_mux.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/home5/msudhanan/ese555workingdir/2_to_1_mux.src.net
 lvs_LvsOutFile RULES_FILE /home/home5/msudhanan/ese555workingdir/_calibreLVS.rul_
-lvs_LvsRunTimes 1702697491 1702697491
+lvs_LvsRunTimes 1703377622 1703377622

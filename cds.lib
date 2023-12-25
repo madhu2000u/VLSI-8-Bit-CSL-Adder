@@ -13,3 +13,5 @@ DEFINE D_FLIPFLOP /home/home5/msudhanan/ese555workingdir/D_FLIPFLOP
 DEFINE D_flip_flop /home/home5/msudhanan/ese555workingdir/D_flip_flop
 #Removed by ddDeleteObj: DEFINE 8_Bit_CSL_Adder /home/home5/msudhanan/ese555workingdir/8_Bit_CSL_Adder
 DEFINE Eight_Bit_CSL_Adder /home/home5/msudhanan/ese555workingdir/Eight_Bit_CSL_Adder
+DEFINE Eight_Bit_CSL_Adder_copy /home/home5/msudhanan/ese555workingdir/Eight_Bit_CSL_Adder_copy
+DEFINE Eight_Bit_CSL_Adder_v2 /home/home5/msudhanan/ese555workingdir/Eight_Bit_CSL_Adder_v2

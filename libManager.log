@@ -1,30 +1,45 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/21/2022 12:53 (cpgsrv12) $
 \o Sub version:		sub-version  s266 
-\o Arguments:		-mpssession virtuoso7915 -mpshost lab38.ece.stonybrook.edu 
+\o Arguments:		-mpssession virtuoso3336 -mpshost lab38.ece.stonybrook.edu 
 \o Working Directory:	lab38.ece.stonybrook.edu:/home/home5/msudhanan/ese555workingdir
 \o 64-bit offsets
 \o Qt version: 		5.9.1
 \o Log file is "/home/home5/msudhanan/ese555workingdir/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(47 99 1360 745))
+\a nrResizeWindow(cdsLibManager list(11 91 1360 745))
 \o changeWorkingDir("/home/home5/msudhanan/ese555workingdir") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "Eight_Bit_CSL_Adder"
 \a cdsLibManager->libLineEdit->value = "Eight_Bit_CSL_Adder"
-\a lmgrLogShowPopup("mainListPopup0" 76 43 2 "Eight_Bit_CSL_Adder")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CopyFromLibrary->value = "D_FLIPFLOP"
-\a basicCopyForm->CopyToLibrary->value = "D_FLIPFLOP"
-\a basicCopyForm->CopyFromLibrary->value = "Eight_Bit_CSL_Adder"
-\a basicCopyForm->CopyToLibrary->value = "Eight_Bit_CSL_Adder"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(566 273 303 316))
-\a basicCopyForm->Cancel->value = t
+\a cdsLibManager->libListBox->value = "Eight_Bit_CSL_Adder_v2"
+\a cdsLibManager->libLineEdit->value = "Eight_Bit_CSL_Adder_v2"
+\a cdsLibManager->cellListBox->value = "Eight_Bit_CSL_Adder"
+\a cdsLibManager->cellLineEdit->value = "Eight_Bit_CSL_Adder"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "Eight_Bit_CSL_Adder_v2"
+\a cdsLibManager->libLineEdit->value = "Eight_Bit_CSL_Adder_v2"
+\a cdsLibManager->cellListBox->value = "Eight_Bit_CSL_Adder"
+\a cdsLibManager->cellLineEdit->value = "Eight_Bit_CSL_Adder"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->fileExitButton->value = t
 \o libManager is exiting.

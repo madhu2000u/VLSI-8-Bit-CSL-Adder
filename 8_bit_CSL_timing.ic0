@@ -1,7 +1,7 @@
 * "simulator" "PrimeSim HSPICE"
 * "version" "S-2021.09-SP2 linux64"
 * "format" "HSP"
-* "rundate" "18:34:25 12/17/2023 "
+* "rundate" "20:31:33 12/18/2023 "
 * "netlist" "8_bit_CSL_timing.sp "
 * "runtitle" "t****************************************************"
 * time =    0.            
@@ -28,6 +28,7 @@
 + b7 =   0.            
 + c0 =   0.            
 + c1 =   1.1000        
++ c7_out =   1.0999        
 + cin =   0.            
 + clk =   0.            
 + cout = 235.9312p       
@@ -40,5 +41,13 @@
 + s5 =   1.4139u       
 + s6 = 228.2560p       
 + s7 = 230.9034p       
++ sc0 = 246.7041u       
++ sc1 =   1.0997        
++ sc2 =   1.0998        
++ sc3 =   1.0997        
++ sc4 =   1.0997        
++ sc5 = 181.3908u       
++ sc6 =   1.0999        
++ sc7 =   1.0997        
 + vdd6 =   1.1000        
 ***   END: Saved Operating Point ***                     

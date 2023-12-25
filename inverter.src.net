@@ -1,10 +1,10 @@
 ************************************************************************
 * auCdl Netlist:
 * 
-* Library Name:  D_flip_flop
+* Library Name:  Eight_Bit_CSL_Adder
 * Top Cell Name: inverter
 * View Name:     schematic
-* Netlisted on:  Nov 16 06:05:20 2023
+* Netlisted on:  Dec 23 17:20:03 2023
 ************************************************************************
 
 *.EQUATION
@@ -15,14 +15,14 @@
 
 
 ************************************************************************
-* Library Name: D_flip_flop
+* Library Name: Eight_Bit_CSL_Adder
 * Cell Name:    inverter
 * View Name:    schematic
 ************************************************************************
 
 .SUBCKT inverter GND VDD VIN VOUT
 *.PININFO VIN:I VOUT:O GND:B VDD:B
-MM0 VOUT VIN VDD VDD PMOS_VTL W=157.5n L=50n m=1
-MM1 VOUT VIN GND GND NMOS_VTL W=100n L=50n m=1
+MM0 VOUT VIN VDD VDD PMOS_VTL W=400n L=50n m=1
+MM1 VOUT VIN GND GND NMOS_VTL W=270.0n L=50n m=1
 .ENDS
 

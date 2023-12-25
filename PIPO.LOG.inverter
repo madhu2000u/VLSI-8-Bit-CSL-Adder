@@ -2,9 +2,9 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 06/22/2022 16:16 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 16-Nov-2023  06:05:19
+Started at: 23-Dec-2023  17:20:02
 User Name : msudhanan
-Host Name : lab28.ece.stonybrook.edu
+Host Name : lab38.ece.stonybrook.edu
 Directory : /home/home5/msudhanan/ese555workingdir
 CADENCE Design Systems, Inc.
 ********************************************************************************
@@ -15,7 +15,7 @@ INFO (XSTRM-288): Performing automatic layer mapping because either the layer ma
 INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options :
-library                                 D_flip_flop
+library                                 Eight_Bit_CSL_Adder
 strmFile                                /home/home5/msudhanan/ese555workingdir/inverter.calibre.db
 topCell                                 inverter
 view                                    layout
@@ -24,14 +24,14 @@ logFile                                 PIPO.LOG.inverter
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView D_flip_flop/inverter/layout as STRUCTURE inverter.
+INFO (XSTRM-223): 1. Translating cellView Eight_Bit_CSL_Adder/inverter/layout as STRUCTURE inverter.
 
 Summary of Objects Translated:
 	Scalar Instances:                       0
 	Array Instances:                        0
 	Polygons:                               3
 	Paths:                                  0
-	Rectangles:                             23
+	Rectangles:                             31
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -51,5 +51,5 @@ Summary of Objects Translated:
 	TextDisplay:                            4
 	Cells:                                  1
 
-Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2472KB
+Elapsed Time: 0.1s   User Time: 0.0s   CPU Time: 0.0s   Peak VM: 2532KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

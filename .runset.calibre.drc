@@ -2,7 +2,7 @@
 *drcRunDir: /home/home5/msudhanan/ese555workingdir
 *drcLayoutPaths: Eight_Bit_CSL_Adder.calibre.db
 *drcLayoutPrimary: Eight_Bit_CSL_Adder
-*drcLayoutLibrary: Eight_Bit_CSL_Adder
+*drcLayoutLibrary: Eight_Bit_CSL_Adder_v2
 *drcLayoutView: layout
 *drcLayoutGetFromViewer: 1
 *drcResultsFile: Eight_Bit_CSL_Adder.drc.results
@@ -14,6 +14,6 @@
 *cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
 *cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
-*cmnFDILayoutLibrary: Eight_Bit_CSL_Adder
+*cmnFDILayoutLibrary: Eight_Bit_CSL_Adder_v2
 *cmnFDILayoutView: layout
 *cmnFDIDEFLayoutPath: Eight_Bit_CSL_Adder.def

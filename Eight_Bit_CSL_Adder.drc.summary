@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Sun Dec 17 18:11:21 2023
+Execution Date/Time:       Sun Dec 24 01:17:27 2023
 Calibre Version:           v2014.4_28.20    Thu Dec 4 12:46:29 PST 2014
 Rule File Pathname:        /home/home5/msudhanan/ese555workingdir/_calibreDRC.rul_
 Rule File Title:           
@@ -30,34 +30,34 @@ Keep Empty Checks:         YES
 ----------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
-LAYER pwell ...... TOTAL Original Geometry Count = 67   (67)
-LAYER nwell ...... TOTAL Original Geometry Count = 67   (67)
-LAYER active ..... TOTAL Original Geometry Count = 960  (960)
-LAYER poly ....... TOTAL Original Geometry Count = 2250 (2250)
-LAYER pimplant ... TOTAL Original Geometry Count = 467  (467)
-LAYER nimplant ... TOTAL Original Geometry Count = 483  (483)
+LAYER pwell ...... TOTAL Original Geometry Count = 48   (48)
+LAYER nwell ...... TOTAL Original Geometry Count = 48   (48)
+LAYER active ..... TOTAL Original Geometry Count = 789  (789)
+LAYER poly ....... TOTAL Original Geometry Count = 1780 (1780)
+LAYER pimplant ... TOTAL Original Geometry Count = 394  (394)
+LAYER nimplant ... TOTAL Original Geometry Count = 394  (394)
 LAYER vth ........ TOTAL Original Geometry Count = 0    (0)
 LAYER vtg ........ TOTAL Original Geometry Count = 0    (0)
-LAYER metal1 ..... TOTAL Original Geometry Count = 3118 (3118)
-LAYER contact .... TOTAL Original Geometry Count = 3005 (3005)
-LAYER metal2 ..... TOTAL Original Geometry Count = 744  (744)
-LAYER metal3 ..... TOTAL Original Geometry Count = 340  (340)
-LAYER metal4 ..... TOTAL Original Geometry Count = 92   (92)
-LAYER metal5 ..... TOTAL Original Geometry Count = 86   (86)
-LAYER metal6 ..... TOTAL Original Geometry Count = 86   (86)
-LAYER metal7 ..... TOTAL Original Geometry Count = 86   (86)
-LAYER metal8 ..... TOTAL Original Geometry Count = 117  (117)
-LAYER metal9 ..... TOTAL Original Geometry Count = 59   (59)
-LAYER metal10 .... TOTAL Original Geometry Count = 31   (31)
-LAYER via1 ....... TOTAL Original Geometry Count = 1924 (1924)
-LAYER via2 ....... TOTAL Original Geometry Count = 1378 (1378)
-LAYER via3 ....... TOTAL Original Geometry Count = 1165 (1165)
-LAYER via4 ....... TOTAL Original Geometry Count = 161  (161)
-LAYER via5 ....... TOTAL Original Geometry Count = 161  (161)
-LAYER via6 ....... TOTAL Original Geometry Count = 161  (161)
-LAYER via7 ....... TOTAL Original Geometry Count = 86   (86)
-LAYER via8 ....... TOTAL Original Geometry Count = 53   (53)
-LAYER via9 ....... TOTAL Original Geometry Count = 25   (25)
+LAYER metal1 ..... TOTAL Original Geometry Count = 2739 (2739)
+LAYER contact .... TOTAL Original Geometry Count = 3125 (3125)
+LAYER metal2 ..... TOTAL Original Geometry Count = 578  (578)
+LAYER metal3 ..... TOTAL Original Geometry Count = 272  (272)
+LAYER metal4 ..... TOTAL Original Geometry Count = 58   (58)
+LAYER metal5 ..... TOTAL Original Geometry Count = 56   (56)
+LAYER metal6 ..... TOTAL Original Geometry Count = 56   (56)
+LAYER metal7 ..... TOTAL Original Geometry Count = 56   (56)
+LAYER metal8 ..... TOTAL Original Geometry Count = 72   (72)
+LAYER metal9 ..... TOTAL Original Geometry Count = 40   (40)
+LAYER metal10 .... TOTAL Original Geometry Count = 26   (26)
+LAYER via1 ....... TOTAL Original Geometry Count = 1314 (1314)
+LAYER via2 ....... TOTAL Original Geometry Count = 888  (888)
+LAYER via3 ....... TOTAL Original Geometry Count = 720  (720)
+LAYER via4 ....... TOTAL Original Geometry Count = 128  (128)
+LAYER via5 ....... TOTAL Original Geometry Count = 128  (128)
+LAYER via6 ....... TOTAL Original Geometry Count = 128  (128)
+LAYER via7 ....... TOTAL Original Geometry Count = 56   (56)
+LAYER via8 ....... TOTAL Original Geometry Count = 40   (40)
+LAYER via9 ....... TOTAL Original Geometry Count = 24   (24)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS
 ---
@@ -108,7 +108,7 @@ RULECHECK Metal3.4 .......... TOTAL Result Count = 0 (0)
 RULECHECK Via3.1 ............ TOTAL Result Count = 0 (0)
 RULECHECK Via3.2 ............ TOTAL Result Count = 0 (0)
 RULECHECK Via3.3 ............ TOTAL Result Count = 0 (0)
-RULECHECK Via3.4 ............ TOTAL Result Count = 0 (0)
+RULECHECK Via3.4 ............ TOTAL Result Count = 8 (8)
 RULECHECK Metal4.1 .......... TOTAL Result Count = 0 (0)
 RULECHECK Metal4.2 .......... TOTAL Result Count = 0 (0)
 RULECHECK Metal4.3 .......... TOTAL Result Count = 0 (0)
@@ -138,7 +138,7 @@ RULECHECK Via7.2 ............ TOTAL Result Count = 0 (0)
 RULECHECK Via7.3 ............ TOTAL Result Count = 0 (0)
 RULECHECK Via7.4 ............ TOTAL Result Count = 0 (0)
 RULECHECK Metal8.1 .......... TOTAL Result Count = 0 (0)
-RULECHECK Metal8.2 .......... TOTAL Result Count = 0 (0)
+RULECHECK Metal8.2 .......... TOTAL Result Count = 1 (1)
 RULECHECK Metal8.3 .......... TOTAL Result Count = 0 (0)
 RULECHECK Via8.1 ............ TOTAL Result Count = 0 (0)
 RULECHECK Via8.2 ............ TOTAL Result Count = 0 (0)
@@ -231,11 +231,14 @@ RULECHECK Antenna.metal10 ... TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
+CELL Eight_Bit_CSL_Adder ... TOTAL Result Count = 9 (9)
+    RULECHECK Via3.4 ....... TOTAL Result Count = 8 (8)
+    RULECHECK Metal8.2 ..... TOTAL Result Count = 1 (1)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 17172 (17172)
+TOTAL Original Layer Geometries: 13957 (13957)
 TOTAL DRC RuleChecks Executed:   167
-TOTAL DRC Results Generated:     0 (0)
+TOTAL DRC Results Generated:     9 (9)

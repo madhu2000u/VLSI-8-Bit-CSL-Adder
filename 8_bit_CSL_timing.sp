@@ -91,10 +91,19 @@ c5 s5 0 load
 c6 s6 0 load
 c7 s7 0 load
 c8 cout 0 load
+c9 sc0 0 0
+c10 sc1 0 0
+c11 sc2 0 0
+c12 sc3 0 0
+c13 sc4 0 0
+c14 sc5 0 0
+c15 sc6 0 0
+c16 sc7 0 0
+c17 c7_out 0 0
 
 **** instantiate 8bit dff
 
-xin vdd6 0 RST CLK s0 a0 b0 s1 a1 b1 s2 a2 b2 s3 a3 b3 s4 a4 b4 s5 a5 b5 s6 a6 b6 s7 a7 b7 cout Eight_Bit_CSL_Adder
+xin vdd6 0 RST CLK sc0 sc1 sc2 sc3 sc4 sc5 sc6 sc7 c7_out s0 a0 b0 s1 a1 b1 s2 a2 b2 s3 a3 b3 s4 a4 b4 s5 a5 b5 s6 a6 b6 s7 a7 b7 cout Eight_Bit_CSL_Adder
 
 **** set conditions and options
 .ic v(xin.s0)=0

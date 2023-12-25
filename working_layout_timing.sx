@@ -1,39 +1,40 @@
 ### Custom WaveView session file (version S-2021.09-SP2 build Feb 24, ) ###
-### saved at 19:02:32 on Sun Dec 17 2023 ###
+### saved at 17:42:29 on Mon Dec 18 2023 ###
 wdf 0 "/home/home5/msudhanan/ese555workingdir/8_bit_CSL_timing.tr0" load=used 
+wdf 1 "/home/home5/msudhanan/ese555workingdir/8_bit_CSL_timing.tr0" load=used 
 cvt_begin
-  cvt_a2d 0 1 '0|v(a0)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a0) newname='F|.|V|v(a0)' 
-  cvt_a2d 1 1 '0|v(a1)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a1) newname='F|.|V|v(a1)' 
-  cvt_a2d 2 1 '0|v(a2)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a2) newname='F|.|V|v(a2)' 
-  cvt_a2d 3 1 '0|v(a3)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a3) newname='F|.|V|v(a3)' 
-  cvt_a2d 4 1 '0|v(a4)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a4) newname='F|.|V|v(a4)' 
-  cvt_a2d 5 1 '0|v(a5)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a5) newname='F|.|V|v(a5)' 
-  cvt_a2d 6 1 '0|v(a6)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a6) newname='F|.|V|v(a6)' 
-  cvt_a2d 7 1 '0|v(a7)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(a7) newname='F|.|V|v(a7)' 
-  cvt_a2d 8 1 '0|v(b0)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b0) newname='F|.|V|v(b0)' 
-  cvt_a2d 9 1 '0|v(b1)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b1) newname='F|.|V|v(b1)' 
-  cvt_a2d 10 1 '0|v(b2)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b2) newname='F|.|V|v(b2)' 
-  cvt_a2d 11 1 '0|v(b3)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b3) newname='F|.|V|v(b3)' 
-  cvt_a2d 12 1 '0|v(b4)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b4) newname='F|.|V|v(b4)' 
-  cvt_a2d 13 1 '0|v(b5)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b5) newname='F|.|V|v(b5)' 
-  cvt_a2d 14 1 '0|v(b6)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b6) newname='F|.|V|v(b6)' 
-  cvt_a2d 15 1 '0|v(b7)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(b7) newname='F|.|V|v(b7)' 
-  cvt_a2d 16 1 '0|v(s0)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s0) newname='F|.|V|v(s0)' 
-  cvt_a2d 17 1 '0|v(s1)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s1) newname='F|.|V|v(s1)' 
-  cvt_a2d 18 1 '0|v(s2)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s2) newname='F|.|V|v(s2)' 
-  cvt_a2d 19 1 '0|v(s3)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s3) newname='F|.|V|v(s3)' 
-  cvt_a2d 20 1 '0|v(s4)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s4) newname='F|.|V|v(s4)' 
-  cvt_a2d 21 1 '0|v(s5)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s5) newname='F|.|V|v(s5)' 
-  cvt_a2d 22 1 '0|v(s6)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s6) newname='F|.|V|v(s6)' 
-  cvt_a2d 23 1 '0|v(s7)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(s7) newname='F|.|V|v(s7)' 
-  cvt_a2d 24 1 '0|v(cout)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=0 name=v(cout) newname='F|.|V|v(cout)' 
+  cvt_a2d 0 1 '0|v(a0)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a0) newname='F|.|V|v(a0)' 
+  cvt_a2d 1 1 '0|v(a1)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a1) newname='F|.|V|v(a1)' 
+  cvt_a2d 2 1 '0|v(a2)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a2) newname='F|.|V|v(a2)' 
+  cvt_a2d 3 1 '0|v(a3)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a3) newname='F|.|V|v(a3)' 
+  cvt_a2d 4 1 '0|v(a4)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a4) newname='F|.|V|v(a4)' 
+  cvt_a2d 5 1 '0|v(a5)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a5) newname='F|.|V|v(a5)' 
+  cvt_a2d 6 1 '0|v(a6)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a6) newname='F|.|V|v(a6)' 
+  cvt_a2d 7 1 '0|v(a7)A' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(a7) newname='F|.|V|v(a7)' 
+  cvt_a2d 8 1 '0|v(b0)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b0) newname='F|.|V|v(b0)' 
+  cvt_a2d 9 1 '0|v(b1)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b1) newname='F|.|V|v(b1)' 
+  cvt_a2d 10 1 '0|v(b2)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b2) newname='F|.|V|v(b2)' 
+  cvt_a2d 11 1 '0|v(b3)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b3) newname='F|.|V|v(b3)' 
+  cvt_a2d 12 1 '0|v(b4)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b4) newname='F|.|V|v(b4)' 
+  cvt_a2d 13 1 '0|v(b5)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b5) newname='F|.|V|v(b5)' 
+  cvt_a2d 14 1 '0|v(b6)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b6) newname='F|.|V|v(b6)' 
+  cvt_a2d 15 1 '0|v(b7)B' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(b7) newname='F|.|V|v(b7)' 
+  cvt_a2d 16 1 '0|v(s0)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s0) newname='F|.|V|v(s0)' 
+  cvt_a2d 17 1 '0|v(s1)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s1) newname='F|.|V|v(s1)' 
+  cvt_a2d 18 1 '0|v(s2)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s2) newname='F|.|V|v(s2)' 
+  cvt_a2d 19 1 '0|v(s3)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s3) newname='F|.|V|v(s3)' 
+  cvt_a2d 20 1 '0|v(s4)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s4) newname='F|.|V|v(s4)' 
+  cvt_a2d 21 1 '0|v(s5)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s5) newname='F|.|V|v(s5)' 
+  cvt_a2d 22 1 '0|v(s6)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s6) newname='F|.|V|v(s6)' 
+  cvt_a2d 23 1 '0|v(s7)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(s7) newname='F|.|V|v(s7)' 
+  cvt_a2d 24 1 '0|v(cout)Sum' tidx=0 th_type1 th_l=5.5000e-01   fidx=1 name=v(cout) newname='F|.|V|v(cout)' 
 cvt_end
 scalar list
-waveview_begin 1  stack  offset=0 name_b=116 mntr_b=116 name_width=101 "name=waveview 1" 
-  panel_begin linear pidx=0 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 
-    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(clk)" attr=0:0:1:0 autoset=true disp=show 
+waveview_begin 1  stack  offset=227 name_b=66 mntr_b=136 name_width=51 mcur=5.50065934605976e-09 vc=cur-pnl "name=waveview 1" 
+  panel_begin linear pidx=0 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=1 "delim=." sigtype=1 "name=v(clk)" attr=0:0:1:0 autoset=true disp=show 
   panel_end
-  panel_begin digital pidx=1 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=A radix=dec 
+  panel_begin digital pidx=1 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 vecname=A radix=dec 
     line src=derived cvtidx=7 disp=show 
     line src=derived cvtidx=6 disp=show 
     line src=derived cvtidx=5 disp=show 
@@ -43,7 +44,7 @@ waveview_begin 1  stack  offset=0 name_b=116 mntr_b=116 name_width=101 "name=wav
     line src=derived cvtidx=1 disp=show 
     line src=derived cvtidx=0 disp=show 
   panel_end
-  panel_begin digital pidx=2 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=B radix=dec 
+  panel_begin digital pidx=2 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 vecname=B radix=dec 
     line src=derived cvtidx=15 disp=show 
     line src=derived cvtidx=14 disp=show 
     line src=derived cvtidx=13 disp=show 
@@ -53,7 +54,7 @@ waveview_begin 1  stack  offset=0 name_b=116 mntr_b=116 name_width=101 "name=wav
     line src=derived cvtidx=9 disp=show 
     line src=derived cvtidx=8 disp=show 
   panel_end
-  panel_begin digital pidx=3 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.8059866962306e-08 xmax=4.9622366962306e-08 vecname=Sum radix=dec 
+  panel_begin digital pidx=3 spath=name+file marker=on xlabel="TIME(sec)" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 vecname=Sum radix=dec 
     line src=derived cvtidx=24 disp=show 
     line src=derived cvtidx=23 disp=show 
     line src=derived cvtidx=22 disp=show 
@@ -63,6 +64,108 @@ waveview_begin 1  stack  offset=0 name_b=116 mntr_b=116 name_width=101 "name=wav
     line src=derived cvtidx=18 disp=show 
     line src=derived cvtidx=17 disp=show 
     line src=derived cvtidx=16 disp=show 
+  panel_end
+  panel_begin linear pidx=4 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a0)" attr=1:1:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=5 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b0)" attr=2:2:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=6 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc0)" attr=4:3:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=7 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s0)" attr=5:4:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=8 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a1)" attr=7:4:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=9 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b1)" attr=0:5:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=10 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc1)" attr=1:6:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=11 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s1)" attr=2:7:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=12 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a2)" attr=3:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=13 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b2)" attr=4:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=14 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc2)" attr=5:1:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=15 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s2)" attr=6:2:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=16 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a3)" attr=7:3:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=17 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b3)" attr=0:4:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=18 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc3)" attr=1:5:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=19 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s3)" attr=2:6:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=20 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a4)" attr=3:7:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=21 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b4)" attr=4:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=22 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc4)" attr=5:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=23 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s4)" attr=6:1:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=24 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a5)" attr=7:2:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=25 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b5)" attr=1:4:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=26 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc5)" attr=2:5:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=27 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s5)" attr=3:6:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=28 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a6)" attr=4:7:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=29 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b6)" attr=5:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=30 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc6)" attr=6:0:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=31 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s6)" attr=7:1:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=32 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(a7)" attr=0:2:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=33 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(b7)" attr=1:3:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=34 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(sc7)" attr=2:4:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=35 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(s7)" attr=3:5:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=36 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(c7_out)" attr=4:6:1:0 autoset=true disp=show 
+  panel_end
+  panel_begin linear pidx=37 spath=name+file xlabel="TIME(sec)" ylabel="V" xmin=4.66101694915254e-09 xmax=6.22351694915255e-09 
+    line src=wdf lidx=0 fidx=0 "delim=." sigtype=1 "name=v(cout)" attr=5:7:1:0 autoset=true disp=show 
   panel_end
 waveview_end
 browserOpened

@@ -1,101 +1,115 @@
 ### Custom WaveView ADV log file, revision S-2021.09-SP2 (build Feb 24, ) ###
-### created at 04:49:29 on Sun Nov 19 2023 (Linux AMD64) ###
-### Host Name: lab28.ece.stonybrook.edu   User ID: msudhanan   PID: 17663   ###
+### created at 17:58:48 on Mon Dec 18 2023 (Linux AMD64) ###
+### Host Name: lab38.ece.stonybrook.edu   User ID: msudhanan   PID: 23643   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
 # (0) SW_SX_TCL_LIB defined
 # (0) HOME defined
-sx_open_sim_file_read {DFF_hspice.tr0}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:DFF_hspice.tr0(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:DFF_hspice.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_list_item {Custom WaveView} {} {sigview} {v(clk)} 5
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(clk)} 5
-wv_drag_enter WV1
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(d)} 6
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(d)} 6
-wv_drag_enter WV1
-wv_drag_to WV1 111 344
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(y6)} 9
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(y6)} 9
-wv_drag_enter WV1
-wv_drag_to WV1 124 427
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(reset)} 7
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(reset)} 7
-wv_drag_enter WV1
-wv_drag_to WV1 130 389
-wv_drop_on WV1
+sx_open_sim_file_read {8_bit_CSL_timing.tr0}
+wv_select_tab {Custom WaveView} {} {RBMenu} {Bar.File}
+wv_press_tool_button {Custom WaveView} {} {LoadSession0} 
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {working_layout_timing.sx} 15
+wv_press_button {FileDialog} {} {Ok} 
+wv_press_button {LoadingSessionFile} {} {Ok} 
 wv_select_waveview 1 {waveview 1}
-wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Ungroup Panels} 
+wv_select_wv_item WV1.HSLIDER 288 505
+wv_drag_item_to WV1 286 506
+wv_drag_item_to WV1 285 503
+wv_horz_scroll WV1 79
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL1:1.XAXIS1
-wv_drag_item_to WV1 421 19
-wv_zoom_x WV1.PANEL1:1 6.1442e-09 8.48485e-09
+wv_select_wv_item WV1.PANEL9:1.CURSOR1
+wv_drag_item_to WV1 771 195
+wv_move_wv_item WV1.PANEL9:1.CURSOR1 496 163
 wv_select_waveview 1 {waveview 1}
-wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Undo Zoom} 
+wv_select_wv_item WV1.HSLIDER 285 505
+wv_drag_item_to WV1 284 505
+wv_drag_item_to WV1 280 508
+wv_horz_scroll WV1 74
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL1:1.XAXIS1
-wv_drag_item_to WV1 378 16
-wv_zoom_x WV1.PANEL1:1 5.22466e-09 8.06688e-09
+wv_select_wv_item WV1.HSLIDER 275 501
+wv_drag_item_to WV1 276 501
+wv_drag_item_to WV1 281 499
+wv_horz_scroll WV1 80
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL1:1.XAXIS1
-wv_drag_item_to WV1 366 11
-wv_zoom_x WV1.PANEL1:1 5.94295e-09 6.62757e-09
-wv_press_tool_button {Custom WaveView} {} {WaveformMeasurementTool0} 
-wv_resize_window {MeasurementTool} 760 749
-wv_select_dialog {MeasurementTool} 
-wv_select_combox_item {MeasurementTool} {} {Signal} "v(y6) DFF_hspice.tr0" 2
-wv_select_combox_item {MeasurementTool} {} {RefSignal} "v(clk) DFF_hspice.tr0" 0
-wv_move_window {MeasurementTool} {} 275 31
-wv_set_radion {MeasurementTool} {} {RangeFullMinMax} 
-wv_set_radion {MeasurementTool} {} {RangeWindowMinMax} 
-wv_press_button {MeasurementTool} {} {Ok} 
+wv_select_panel WV1.PANEL7:1 4.75688e-09 0.92649
+wv_select_panel WV1.PANEL7:1 4.75688e-09 0.92649 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL11:1 4.82963e-09 -0.207904
+wv_select_panel WV1.PANEL11:1 4.82963e-09 -0.207904 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL9:1.CURSOR1
+wv_drag_item_to WV1 351 210
+wv_move_wv_item WV1.PANEL9:1.CURSOR1 468 221
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL15:1 4.84695e-09 0.930632
+wv_select_panel WV1.PANEL15:1 4.84695e-09 0.930632 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL19:1 4.89719e-09 -0.22844
+wv_select_panel WV1.PANEL19:1 4.89719e-09 -0.22844 btnup
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL17:1.CURSOR1
+wv_drag_item_to WV1 395 355
+wv_move_wv_item WV1.PANEL17:1.CURSOR1 470 78
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL6:1.CURSOR1
+wv_drag_item_to WV1 458 133
+wv_move_wv_item WV1.PANEL6:1.CURSOR1 470 121
 wv_select_window {Custom WaveView} 
 wv_select_waveview 1 {waveview 1}
-wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Full Unzoom} 
+wv_select_wv_item WV1.PANEL10:1.CURSOR1
+wv_drag_item_to WV1 470 222
+wv_move_wv_item WV1.PANEL10:1.CURSOR1 608 219
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.MEAS1
-wv_drag_item_to WV1 486 315
-wv_move_wv_item WV1.MEAS1 457 339
+wv_select_wv_item WV1.HSLIDER 279 503
+wv_drag_item_to WV1 280 503
+wv_drag_item_to WV1 283 501
+wv_horz_scroll WV1 84
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL1:1.XAXIS1
-wv_drag_item_to WV1 397 16
-wv_zoom_x WV1.PANEL1:1 5.62173e-09 7.18913e-09
+wv_select_wv_item WV1.HSLIDER 289 507
+wv_drag_item_to WV1 288 508
+wv_drag_item_to WV1 282 511
+wv_horz_scroll WV1 77
 wv_select_waveview 1 {waveview 1}
-wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Undo Zoom} 
+wv_select_wv_item WV1.PANEL10:1.CURSOR1
+wv_drag_item_to WV1 705 215
+wv_move_wv_item WV1.PANEL10:1.CURSOR1 416 142
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.PANEL1:1.XAXIS1
-wv_drag_item_to WV1 409 18
-wv_zoom_x WV1.PANEL1:1 5.85162e-09 7.79519e-09
-wv_press_tool_button {Custom WaveView} {} {WaveformMeasurementTool0} 
-wv_select_dialog {MeasurementTool} 
-wv_select_combox_item {MeasurementTool} {} {Signal} "v(d) DFF_hspice.tr0" 1
-wv_select_combox_item {MeasurementTool} {} {Signal} "v(y6) DFF_hspice.tr0" 2
-wv_select_combox_item {MeasurementTool} {} {RefSignal} "v(clk) DFF_hspice.tr0" 0
-wv_resize_window {MeasurementTool} 760 749
-wv_move_window {MeasurementTool} {} 273 31
-wv_set_radion {MeasurementTool} {} {FallEdge} 
-wv_set_radion {MeasurementTool} {} {OppositeEdge} 
-wv_press_button {MeasurementTool} {} {Ok} 
-wv_select_window {Custom WaveView} 
+wv_select_wv_item WV1.PANEL4:1.VSLIDER 5 98
+wv_release_wv_item WV1 5 98
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.MEAS2
-wv_drag_item_to WV1 501 315
-wv_move_wv_item WV1.MEAS2 763 209
+wv_select_wv_item WV1.PANEL4:1.VSLIDER 7 100
+wv_release_wv_item WV1 7 100
 wv_select_waveview 1 {waveview 1}
-wv_select_wv_item WV1.MEAS1
-wv_drag_item_to WV1 549 365
-wv_move_wv_item WV1.MEAS1 360 207
+wv_select_wv_item WV1.PANEL9:1.CURSOR1
+wv_drag_item_to WV1 414 199
+wv_move_wv_item WV1.PANEL9:1.CURSOR1 294 174
 wv_select_waveview 1 {waveview 1}
-wv_select_panel WV1.PANEL3:1 7.09248e-09 0.674664
-wv_drag_item_to WV1 735 318
-wv_zoom WV1.PANEL3:1 7.09248e-09 0.674664 7.09248e-09 0.570161
+wv_select_wv_item WV1.PANEL31:1.CURSOR1
+wv_drag_item_to WV1 295 330
+wv_move_wv_item WV1.PANEL31:1.CURSOR1 314 326
 wv_select_waveview 1 {waveview 1}
-wv_select_toolbar_item {Custom WaveView} {waveview 1:1} {Undo Zoom} 
-wv_select_window {Custom WaveView} 
+wv_select_wv_item WV1.PANEL31:1.CURSOR1
+wv_drag_item_to WV1 315 334
+wv_move_wv_item WV1.PANEL31:1.CURSOR1 376 347
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL10:1.CURSOR1
+wv_drag_item_to WV1 374 215
+wv_move_wv_item WV1.PANEL10:1.CURSOR1 280 232
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL10:1.CURSORX1
+wv_drag_item_to WV1 281 231
+wv_move_wv_item WV1.PANEL10:1.CURSOR1 298 230
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.HSLIDER 274 502
+wv_drag_item_to WV1 273 502
+wv_drag_item_to WV1 270 503
+wv_horz_scroll WV1 73
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL11:1.CURSOR1
+wv_drag_item_to WV1 412 239
+wv_move_wv_item WV1.PANEL11:1.CURSOR1 654 223
 wv_close_window {Custom WaveView} 
 wv_select_dialog {Confirmation} 
 #wv_press_button {Confirmation} {} {Ok} 

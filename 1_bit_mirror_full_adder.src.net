@@ -1,10 +1,10 @@
 ************************************************************************
 * auCdl Netlist:
 * 
-* Library Name:  8_Bit_CSL_Adder
+* Library Name:  Eight_Bit_CSL_Adder
 * Top Cell Name: 1_bit_mirror_full_adder
 * View Name:     schematic
-* Netlisted on:  Dec 15 22:26:12 2023
+* Netlisted on:  Dec 20 22:40:03 2023
 ************************************************************************
 
 *.EQUATION
@@ -15,36 +15,36 @@
 
 
 ************************************************************************
-* Library Name: 8_Bit_CSL_Adder
+* Library Name: Eight_Bit_CSL_Adder
 * Cell Name:    1_bit_mirror_full_adder
 * View Name:    schematic
 ************************************************************************
 
 .SUBCKT 1_bit_mirror_full_adder A B Cin GND VDD ~Cout ~S
 *.PININFO A:I B:I Cin:I ~Cout:O ~S:O GND:B VDD:B
-MM22 net20 B VDD VDD PMOS_VTL W=160.0n L=50n m=1
-MM20 net18 B VDD VDD PMOS_VTL W=160.0n L=50n m=1
-MM14 ~S Cin net21 VDD PMOS_VTL W=160.0n L=50n m=1
-MM13 ~S ~Cout net18 VDD PMOS_VTL W=140.0n L=50n m=1
-MM12 net21 A net20 VDD PMOS_VTL W=160.0n L=50n m=1
-MM11 net18 Cin VDD VDD PMOS_VTL W=160.0n L=50n m=1
-MM10 net18 A VDD VDD PMOS_VTL W=160.0n L=50n m=1
-MM4 ~Cout A net7 VDD PMOS_VTL W=180.0n L=50n m=1
-MM3 ~Cout Cin net4 VDD PMOS_VTL W=180.0n L=50n m=1
-MM2 net7 B VDD VDD PMOS_VTL W=180.0n L=50n m=1
-MM1 net4 B VDD VDD PMOS_VTL W=180.0n L=50n m=1
-MM0 net4 A VDD VDD PMOS_VTL W=180.0n L=50n m=1
-MM23 net24 B GND GND NMOS_VTL W=100n L=50n m=1
-MM21 net22 B GND GND NMOS_VTL W=100n L=50n m=1
-MM19 net22 A GND GND NMOS_VTL W=100n L=50n m=1
-MM18 net22 Cin GND GND NMOS_VTL W=100n L=50n m=1
-MM17 net23 A net24 GND NMOS_VTL W=100n L=50n m=1
-MM16 ~S Cin net23 GND NMOS_VTL W=100n L=50n m=1
-MM15 ~S ~Cout net22 GND NMOS_VTL W=90n L=50n m=1
-MM9 net8 A GND GND NMOS_VTL W=115.00n L=50n m=1
-MM8 net8 B GND GND NMOS_VTL W=115.00n L=50n m=1
-MM7 net9 B GND GND NMOS_VTL W=115.00n L=50n m=1
-MM6 ~Cout A net9 GND NMOS_VTL W=115.00n L=50n m=1
-MM5 ~Cout Cin net8 GND NMOS_VTL W=115.00n L=50n m=1
+MM22 net20 B VDD VDD PMOS_VTL W=400n L=50n m=1
+MM20 net18 B VDD VDD PMOS_VTL W=400n L=50n m=1
+MM14 ~S Cin net21 VDD PMOS_VTL W=400n L=50n m=1
+MM13 ~S ~Cout net18 VDD PMOS_VTL W=400n L=50n m=1
+MM12 net21 A net20 VDD PMOS_VTL W=400n L=50n m=1
+MM11 net18 Cin VDD VDD PMOS_VTL W=400n L=50n m=1
+MM10 net18 A VDD VDD PMOS_VTL W=400n L=50n m=1
+MM4 ~Cout A net7 VDD PMOS_VTL W=400n L=50n m=1
+MM3 ~Cout Cin net4 VDD PMOS_VTL W=400n L=50n m=1
+MM2 net7 B VDD VDD PMOS_VTL W=400n L=50n m=1
+MM1 net4 B VDD VDD PMOS_VTL W=400n L=50n m=1
+MM0 net4 A VDD VDD PMOS_VTL W=400n L=50n m=1
+MM23 net24 B GND GND NMOS_VTL W=270.0n L=50n m=1
+MM21 net22 B GND GND NMOS_VTL W=270.0n L=50n m=1
+MM19 net22 A GND GND NMOS_VTL W=270.0n L=50n m=1
+MM18 net22 Cin GND GND NMOS_VTL W=270.0n L=50n m=1
+MM17 net23 A net24 GND NMOS_VTL W=270.0n L=50n m=1
+MM16 ~S Cin net23 GND NMOS_VTL W=270.0n L=50n m=1
+MM15 ~S ~Cout net22 GND NMOS_VTL W=270.0n L=50n m=1
+MM9 net8 A GND GND NMOS_VTL W=270.0n L=50n m=1
+MM8 net8 B GND GND NMOS_VTL W=270.0n L=50n m=1
+MM7 net9 B GND GND NMOS_VTL W=270.0n L=50n m=1
+MM6 ~Cout A net9 GND NMOS_VTL W=270.0n L=50n m=1
+MM5 ~Cout Cin net8 GND NMOS_VTL W=270.0n L=50n m=1
 .ENDS
 

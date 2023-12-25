@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 06/22/2022 16:16 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 17-Dec-2023  18:12:59
+Started at: 24-Dec-2023  01:17:27
 User Name : msudhanan
 Host Name : lab38.ece.stonybrook.edu
 Directory : /home/home5/msudhanan/ese555workingdir
@@ -15,7 +15,7 @@ INFO (XSTRM-288): Performing automatic layer mapping because either the layer ma
 INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options :
-library                                 Eight_Bit_CSL_Adder
+library                                 Eight_Bit_CSL_Adder_v2
 strmFile                                /home/home5/msudhanan/ese555workingdir/Eight_Bit_CSL_Adder.calibre.db
 topCell                                 Eight_Bit_CSL_Adder
 view                                    layout
@@ -24,14 +24,14 @@ logFile                                 PIPO.LOG.Eight_Bit_CSL_Adder
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView Eight_Bit_CSL_Adder/Eight_Bit_CSL_Adder/layout as STRUCTURE Eight_Bit_CSL_Adder.
+INFO (XSTRM-223): 1. Translating cellView Eight_Bit_CSL_Adder_v2/Eight_Bit_CSL_Adder/layout as STRUCTURE Eight_Bit_CSL_Adder.
 
 Summary of Objects Translated:
 	Scalar Instances:                       0
 	Array Instances:                        0
-	Polygons:                               50
+	Polygons:                               57
 	Paths:                                  0
-	Rectangles:                             17122
+	Rectangles:                             13900
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -48,8 +48,8 @@ Summary of Objects Translated:
 	CdsGen Vias:                            0
 	Pathsegs:                               0
 	Text:                                   0
-	TextDisplay:                            29
+	TextDisplay:                            0
 	Cells:                                  1
 
-Elapsed Time: 0.8s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 3016KB
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2804KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

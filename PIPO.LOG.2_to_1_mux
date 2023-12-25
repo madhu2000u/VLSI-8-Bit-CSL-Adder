@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 06/22/2022 16:16 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.26 
-Started at: 15-Dec-2023  22:31:29
+Started at: 23-Dec-2023  19:27:00
 User Name : msudhanan
 Host Name : lab38.ece.stonybrook.edu
 Directory : /home/home5/msudhanan/ese555workingdir
@@ -15,7 +15,7 @@ INFO (XSTRM-288): Performing automatic layer mapping because either the layer ma
 INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
 
 Summary of Options :
-library                                 8_Bit_CSL_Adder
+library                                 Eight_Bit_CSL_Adder
 strmFile                                /home/home5/msudhanan/ese555workingdir/2_to_1_mux.calibre.db
 topCell                                 2_to_1_mux
 view                                    layout
@@ -24,14 +24,14 @@ logFile                                 PIPO.LOG.2_to_1_mux
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView 8_Bit_CSL_Adder/2_to_1_mux/layout as STRUCTURE 2_to_1_mux.
+INFO (XSTRM-223): 1. Translating cellView Eight_Bit_CSL_Adder/2_to_1_mux/layout as STRUCTURE 2_to_1_mux.
 
 Summary of Objects Translated:
 	Scalar Instances:                       0
 	Array Instances:                        0
 	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             63
+	Rectangles:                             83
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -51,5 +51,5 @@ Summary of Objects Translated:
 	TextDisplay:                            6
 	Cells:                                  1
 
-Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2516KB
+Elapsed Time: 0.1s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 2532KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

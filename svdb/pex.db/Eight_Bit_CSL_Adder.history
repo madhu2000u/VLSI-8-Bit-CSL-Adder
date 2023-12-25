@@ -4,5 +4,5 @@
 //TOKEN_DELIMITER: "
 //TOKEN_SEPARATOR: " "
 //FORMAT: "time" "calibre version" "command line"
-"Sun Dec 17 18:13:08 2023 " "v2014.4_28.20" "-xrc -pdb -rcc -turbo 1 /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"
-"Sun Dec 17 18:13:17 2023 " "v2014.4_28.20" "-xrc -fmt -all /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"
+"Mon Dec 18 16:05:31 2023 " "v2014.4_28.20" "-xrc -pdb -rcc -turbo 1 /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"
+"Mon Dec 18 16:05:34 2023 " "v2014.4_28.20" "-xrc -fmt -all /home/home5/msudhanan/ese555workingdir/_calibrexRC.rul_"

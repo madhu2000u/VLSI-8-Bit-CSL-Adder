@@ -1,4 +1,4 @@
 $DATA1 SOURCE='PrimeSim HSPICE' VERSION='S-2021.09-SP2 linux64' PARAM_COUNT=0
 .TITLE 't****************************************************'
  iavg6            power6           temper           alter#          
- -1.006e-03       -1.106e-03         25.0000        1               
+ -1.011e-03       -1.112e-03         25.0000        1               
